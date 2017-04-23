@@ -16,7 +16,7 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Respira
+module SF-UAE
   class Application < Rails::Application
     
     eval File.read(Rails.root.join('config', 'initializers', 'global_functions.rb'))

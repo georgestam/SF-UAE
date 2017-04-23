@@ -14,9 +14,9 @@ Story.destroy_all
 
 admin = User.new({
 
-    email: "jordi@respira.io",
+    email: "rakan@starfishproject.ae",
     password: "password",
-    name: "jordi",
+    name: "rakan",
     admin: true
     })
 

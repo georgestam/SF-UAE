@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'speak@respira.io'
+  default from: 'rakan@starfishproject.ae'
   layout 'mailer'
 end
