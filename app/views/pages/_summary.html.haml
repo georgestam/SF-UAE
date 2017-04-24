@@ -1,0 +1,44 @@
+#summary.linked
+
+%section.light-gray-bg.pv-30.clearfix
+  .container
+    .row
+      .col-md-8.col-md-offset-2
+        %h2.text-center
+          
+          %strong 
+            = t '.features_moto'
+        .separator
+        %p.large.text-center 
+          = t '.features_description'
+      .col-md-4
+        .pv-30.ph-20.feature-box.bordered.shadow.text-center.object-non-visible{"data-animation-effect" => "fadeInDownSmall", "data-effect-delay" => "100"}
+          %span.icon.default-bg.circle
+            %i.fa.fa-diamond
+          %h3 
+            = t '.feature1_title'
+          .separator.clearfix
+          %p 
+            = t '.feature2_descrption'
+      
+      .col-md-4
+        .pv-30.ph-20.feature-box.bordered.shadow.text-center.object-non-visible{"data-animation-effect" => "fadeInDownSmall", "data-effect-delay" => "150"}
+          %span.icon.default-bg.circle
+            %i.fa.fa-connectdevelop
+          %h3 
+            = t '.feature2_title'
+          .separator.clearfix
+          %p 
+            = t '.feature2_description'
+          %a{:href => "page-services.html"}
+    
+      .col-md-4
+        .pv-30.ph-20.feature-box.bordered.shadow.text-center.object-non-visible{"data-animation-effect" => "fadeInDownSmall", "data-effect-delay" => "200"}
+          %span.icon.default-bg.circle
+            %i.fa.icon-snow
+          %h3 
+            = t '.feature3_title'
+          .separator.clearfix
+          %p 
+            = t '.feature3_description'
+
