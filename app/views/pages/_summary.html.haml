@@ -41,4 +41,46 @@
           .separator.clearfix
           %p 
             = t '.feature3_description'
+  
+  .container
+    .row
+      / main start
+      / ================
+      .main.col-md-12
+        .separator-2
+        .row
+          .col-md-6
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus illo vero cupiditate, sed enim voluptatibus provident consectetur. Quo dolor sunt nostrum, eligendi illo accusamus odit, ipsam excepturi voluptatem nulla minus.
+            %p Blanditiis aspernatur, non quasi, maxime corporis officiis quia. Cupiditate, voluptatibus ducimus, natus, labore mollitia dolorem incidunt voluptatum, delectus eius fugit porro placeat animi voluptatem autem hic eligendi sint. Amet pariatur odit repudiandae sunt. Rem ipsum dolor sit amet, consectetur adipisicing elit. Sunt asperiores a.
+            %ul.list-icons
+              %li
+                %i.icon-check-1
+                We are here to support you
+              %li
+                %i.icon-check-1
+                Free updates
+              %li
+                %i.icon-check-1
+                Unlimited options and variations
+              %li
+                %i.icon-check-1
+                ipsam asperiores fugiat quo
+          .col-md-6
+            .owl-carousel.content-slider-with-controls
+              .overlay-container.overlay-visible
+                = cl_image_tag("at/crazy.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto", :height=>1380, :width=>2000, :y=>100, :x=>150, :crop=>"fill"}])
+                .overlay-bottom.hidden-xs
+                %a.popup-img.overlay-link{:href => "http://res.cloudinary.com/georgestam/image/upload/v1479479017/at/crazy.jpg", :title => I18n.t("views.pages.summary.image_title1")}
+                  %i.icon-plus-1
+              .overlay-container.overlay-visible
+                = cl_image_tag("at/dive.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto", :height=>1380, :width=>2000, :y=>100, :x=>150, :crop=>"fill"}])
+                .overlay-bottom.hidden-xs
+                %a.popup-img.overlay-link{:href => "http://res.cloudinary.com/georgestam/image/upload/v1479479006/at/dive.jpg", :title => I18n.t("views.pages.summary.image_title2")}
+                  %i.icon-plus-1
+              .overlay-container.overlay-visible
+                = cl_image_tag("at/office-594132_1.jpg", :client_hints=>true, :transformation=>[{:dpr=>"auto", :height=>1380, :width=>2000, :y=>100, :x=>150, :crop=>"fill"}])
+                .overlay-bottom.hidden-xs
+                %a.popup-img.overlay-link{:href => "http://res.cloudinary.com/georgestam/image/upload/v1479479007/at/office-594132_1.jpg", title: I18n.t("views.pages.summary.image_title3")}
+                  %i.icon-plus-1
+      / main end
 

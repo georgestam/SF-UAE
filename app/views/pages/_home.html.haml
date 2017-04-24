@@ -9,7 +9,7 @@
       = t '.home_subtitle_2'
     %p
       %a#btn-black.btn.btn-lg.btn-default.btn-animated.scrollspy.smooth-scroll{:href => "#subscribe"}
-        = t '.subscribe'
+        = t '.apply_now'
         %i.fa.fa-arrow-right.pl-20
   .col-md-12.text-center.banner-arrow
     %a.btn.btn-lg.moving.smooth-scroll{:href => "#what"}
@@ -45,7 +45,7 @@
                     = f.input :email, placeholder: I18n.t('views.pages.home.email' ), label: false, required: true
                     = f.hidden_field :password, value: '12345678'
                     = f.hidden_field :password_confirmation, value: '12345678'
-                    = f.button :submit, I18n.t('views.shared.footer.subscribe' ), class: "btn btn-lg btn-default.btn-animated margin-clear", id: "register" 
+                    = f.button :submit, I18n.t('views.pages.home.apply_now' ), class: "btn btn-lg btn-default.btn-animated margin-clear", id: "register" 
           
           
 .separator.mb-20

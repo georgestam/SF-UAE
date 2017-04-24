@@ -70,6 +70,7 @@ en:
       wearable: Wearable
     home:
       call-to-action: Call-to-action
+      call_to_action: Call to action
       home_subtitle_1: Home subtitle 1
       home_subtitle_2: Home subtitle 2
       home_title: Home title
@@ -82,6 +83,15 @@ en:
       subtitle_2: Subtitle 2
     index:
       starfish_title: Starfish title
+    summary:
+      feature1_title: Feature1 title
+      feature2_description: Feature2 description
+      feature2_descrption: Feature2 descrption
+      feature2_title: Feature2 title
+      feature3_description: Feature3 description
+      feature3_title: Feature3 title
+      features_description: Features description
+      features_moto: Features moto
     timeline:
       time_1_h2: Respira ‘idea’ is born
       time_1_p: Jordi and Marcos come up with the idea of Respira.
@@ -191,6 +201,7 @@ en:
         articles: Articles
     pages:
       home:
+        apply_now: Apply now
         email: Email
         enter_email: Enter email
         enter_name: Enter name
