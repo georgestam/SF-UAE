@@ -1,0 +1,102 @@
+%section.section.pv-40.dark-custom.clearfix
+  .container
+    .row
+      .col-md-12
+        .call-to-action
+          .row
+            .col-sm-12
+              %h3.mt-10.text-center
+                = t '.moto'
+              %p{:style => "font-style: italic;"} Will Durant
+/ section end
+/ footer start (Add "dark" class to #footer in order to enable dark footer)
+/ ================
+%footer#footer.clearfix
+  / footer top start
+  / ================
+  .dark-bg.animated-text
+    .container
+      .row
+        .col-md-12
+          .call-to-action.text-center
+            .row
+              .col-sm-12.margin
+                %h2
+                  = t '.cta1'
+                %h2
+                  = t '.cta2'
+  / footer top end
+  / footer start (Add "dark" class to #footer in order to enable dark footer)
+  / ================
+  %footer#footer.clearfix.dark
+    / .footer start
+    / ================
+    .footer
+      .container
+        .footer-inner
+          .row
+            .col-md-6
+              .footer-content
+                %p
+                  = t '.footer_summary_1'
+                  %br/
+                  %br/
+                  = t '.footer_summary_2'
+                  %br/
+                  %br/
+                  = t '.footer_summary_3'
+                  %br/
+                %ul.list-inline.mb-20
+                  %li
+                    %i.text-default.fa.fa-map-marker.pr-5
+                    London
+                  %li.link-dark
+                    %i.text-default.fa.fa-envelope-o.pl-10.pr-5
+                    speak@respira.io
+                .separator-2
+                %ul.social-links.circle.margin-clear.animated-effect-1
+                  %li.facebook
+                    %a{:href => "https://www.facebook.com/respira.io/", :target => "_blank"}
+                      %i.fa.fa-facebook
+                  %li.linkedin
+                    %a{:href => "https://www.linkedin.com/company/respira.io", :target => "_blank"}
+                      %i.fa.fa-linkedin
+                  %li.twitter
+                    %a{:href => "https://twitter.com/respirateam", :target => "_blank"}
+                      %i.fa.fa-twitter
+                  %li.youtube
+                    %a{:href => "https://www.youtube.com/channel/UCkXkHoNv2qh5Xl5GBpZJViQ", :target => "_blank"}
+                      %i.fa.fa-youtube-play
+            .col-md-6
+              .footer-content
+                #MessageSent2.alert.alert-success.hidden
+                  We have received your message, we will contact you very soon.
+                #MessageNotSent2.alert.alert-danger.hidden
+                  Oops! Something went wrong please refresh the page and try again.
+                %footer#footer-form
+                  .form-group.has-feedback.mb-10
+                    = simple_form_for @user, url: user_registration_path do |f|
+                      = flash[:notice]
+                      = f.input :name, label: I18n.t('views.shared.footer.name' ), placeholder: I18n.t('views.shared.footer.name' ), required: true
+                      = f.input :email, label: I18n.t('views.shared.footer.email' ), placeholder: I18n.t('views.shared.footer.email' ), required: true
+                      = f.hidden_field :password, value: '12345678'
+                      = f.hidden_field :password_confirmation, value: '12345678'
+                      = f.button :submit, I18n.t('views.shared.footer.subscribe' ), class: "btn btn-lg btn-default btn-animated", id: "register"
+    / .footer end
+    / .subfooter start
+    / ================
+    .subfooter
+      .container
+        .subfooter-inner
+          .row
+            .col-md-12
+              %p.text-center
+                Copyright © 2017 The Project by
+                = succeed "." do
+                  %a{:href => "http://newwaves.design", :target => "_blank"} New Waves Design
+    / .subfooter end
+  / footer end
+  :javascript
+    $( '#register' ).click(function() {
+    fbq('track', 'CompleteRegistration');
+    });

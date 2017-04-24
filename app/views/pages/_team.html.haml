@@ -1,0 +1,108 @@
+#team
+/ section
+/ ================
+%section#about.main-container
+  .container
+    / <h3 class="title">Our <strong>Team</strong></h3>
+    .row.grid-space-10
+      .col-sm-4
+        .team-member.image-box.text-center
+          .overlay-container.overlay-visible
+            = image_tag "team/lewagon-jordi.jpg", class:"team_pic"
+            .overlay-bottom
+              %ul.social-links.circle.dark.margin-clear
+                %li.linkedin
+                  %a{:href => "http://uk.linkedin.com/in/jordi-fernandez-msc-ceng-bb42ab12", :target => "_blank"}
+                    %i.fa.fa-linkedin
+                %li.linkedin
+                  %a{:href => "https://github.com/georgestam", :target => "_blank"}
+                    %i.fa.fa-github
+          .body
+            %h3.margin-clear Jordi Fernandez
+            %small Web Developer and Mechanical Engineer (MEng)
+            .separator.mt-10
+            %p.small.margin-clear
+              I have stuttered since I was 5 years old. In 2011, I joined
+              %a{:href => "http://www.mcguireprogramme.com/en"} The McGuire Program
+              and my speech has improved ever since.
+      .col-sm-4
+        .team-member.image-box.text-center
+          .overlay-container.overlay-visible
+            = image_tag "team/marcos.jpg", class:"team_pic"
+            .overlay-bottom
+              %ul.social-links.circle.dark.margin-clear
+                %li.linkedin
+                  %a{:href => "http://uk.linkedin.com/in/juan-marcos-garcía-de-la-cruz-lópez-25b19b89", :target => "_blank"}
+                    %i.fa.fa-linkedin
+          .body
+            %h3.margin-clear Marcos Garcia de la Cruz
+            %small Aerospace Engineer (MEng, PhD)
+            .separator.mt-10
+            %p.small.margin-clear Energetic, analytical  result driven PhD, passionate about technology  science, I enjoy working between development and commercialization.
+      .col-sm-4
+        .team-member.image-box.text-center
+          .overlay-container.overlay-visible
+            = cl_image_tag rakan, class:team_pic, :client_hints=true, :transformation=[{:width=400, :height=400, :gravity=face, :radius=max, :crop=crop}, |
+              {:width=200, :crop=scale}]                                                                                                                  |
+            .overlay-bottom
+              %ul.social-links.circle.dark.margin-clear
+                %li.linkedin
+                  %a{:href => "https://www.linkedin.com/in/rakan-alotaibi-7653302a/", :target => "_blank"}
+                    %i.fa.fa-linkedin
+                %li.linkedin
+                  %a{:href => "https://twitter.com/r4k4n?lang=en", :target => "_blank"}
+                    %i.fa.fa-twitter
+          .body
+            %h3.margin-clear Rakan AlOtaibi
+            %small Mechanical Engineer  Entrepreneur
+            .separator.mt-10
+            %p.small.margin-clear
+              Intellectually curious, Dynamic and proactive engineer with an entrepreneur mind Founder of
+              = succeed "." do
+                %a{:href => "http://www.starfishproject.ae/en/home/"} Starfish Project UAE
+    .row.grid-space-10
+      .col-sm-4
+        .team-member.image-box.text-center
+          .overlay-container.overlay-visible
+            = image_tag team/rowan.jpg, class:team_pic
+            .overlay-bottom
+              %ul.social-links.circle.dark.margin-clear
+                %li.linkedin
+                  %a{:href => "http://uk.linkedin.com/in/rowan-brackston-87654987", :target => "_blank"}
+                    %i.fa.fa-linkedin
+          .body
+            %h3.margin-clear Rowan Brackston
+            %small Aerospace Engineer (MEng, PhD-candidate)
+            .separator.mt-10
+            %p.small.margin-clear Research and development engineer, I am passionate about developing technologies that have a positive impact.
+      .col-sm-4
+        .team-member.image-box.text-center
+          .overlay-container.overlay-visible
+            = image_tag team/dimitri.jpg, class:team_pic
+            .overlay-bottom
+              %ul.social-links.circle.dark.margin-clear
+                %li.linkedin
+                  %a{:href => "https://be.linkedin.com/in/dimitri-van-immerseel-0920a9130/en", :target => "_blank"}
+                    %i.fa.fa-linkedin
+          .body
+            %h3.margin-clear Dimitri Van Immerseel
+            %small App Developer
+            .separator.mt-10
+            %p.small.margin-clear Android  Java developer. I'd like to make socially relevant software that can improve lives.
+      .col-sm-4
+        .team-member.image-box.text-center
+          .overlay-container.overlay-visible
+            = cl_image_tag(at/rafa.jpg, class:team_pic)
+            .overlay-bottom
+              %ul.social-links.circle.dark.margin-clear
+                %li.linkedin
+                  %a{:href => "https://www.linkedin.com/in/rafaelperezechevarria/", :target => "_blank"}
+                    %i.fa.fa-linkedin
+          .body
+            %h3.margin-clear Rafael P&#xE9;rez
+            %small Principal H Consultant, BSc Hons, CMIOSH
+            .separator.mt-10
+            %p.small.margin-clear I enjoy breaking problems into manageable chunks. I have battled with a stutter all my life so I have a vested interest in Respira.
+    .row
+      .col-xs-12.col-md-push-3.col-md-6
+/ section end
