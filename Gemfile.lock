@@ -323,6 +323,7 @@ DEPENDENCIES
   fontello_rails_converter
   friendly_id (~> 5.1.0)
   gibbon
+  haml (~> 4.0, >= 4.0.7)
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener

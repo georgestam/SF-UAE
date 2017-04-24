@@ -10,6 +10,7 @@
       / "centered": mandatory class for the centered logo layout
       / ================
       %header.header.fixed.clearfix
+        = render 'shared/navbar_top'
         %div{:style => "padding: 0px 50px 0px 50px !important;"}
           .row
             .col-xs-12.col-md-3
@@ -70,6 +71,7 @@
                             %a{:href => "#footer"}
                               = t '.contact'
                           %li
+                            = link_to t(".media"), articles_path, class: "navbar-wagon-item navbar-wagon-link"
                           %li.facebook
                             %a{:href => "https://www.facebook.com/respira.io/", :target => "_blank"}
                               %i.fa.fa-facebook

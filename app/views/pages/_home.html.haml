@@ -1,12 +1,13 @@
 - content_for :title, "Respira"
 #banner
-.banner{:style => "background-image: linear-gradient(210deg, rgba(0,101,168,0.1) 20%, rgba(0,36,61,0.5) 50%), url('#{cl_image_path("respira/banner.jpg", :client_hints=>true, :transformation=>[{:x=>1500, :y=>100, :width=>2000, :height=>1000, :dpr=>"auto", :crop=>"crop"}])}');"}
+.banner{:style => "background-image: linear-gradient(210deg, rgba(0,101,168,0.1) 20%, rgba(0,36,61,0.5) 50%), url('#{cl_image_path("ST-UEA/starfish1.jpg", :client_hints=>true, :transformation=>[{:x=>0, :y=>0, :width=>2000, :height=>1000, :dpr=>"auto", :crop=>"fill"}])}');"}
   .banner-content
-    %h1.logo-font.fadeInRightBig.animated RESPIRA
+    %h1.fadeInRightBig.animated 
+      = t '.home_title'
     %p.normal.fadeInLeftBig.animated
-      = t '.subtitle_1'
-      %br/
-      = t '.subtitle_2'
+      = t '.home_subtitle_1'
+      %br
+      = t '.home_subtitle_2'
     %p
       %a#btn-black.btn.btn-lg.btn-default.btn-animated{:href => "#footer"}
         = t '.subscribe'
