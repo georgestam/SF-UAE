@@ -1,102 +1,179 @@
-%section.section.pv-40.dark-custom.clearfix
-  .container
-    .row
-      .col-md-12
-        .call-to-action
-          .row
-            .col-sm-12
-              %h3.mt-10.text-center
-                = t '.moto'
-              %p{:style => "font-style: italic;"} Will Durant
-/ section end
-/ footer start (Add "dark" class to #footer in order to enable dark footer)
-/ ================
+
+
 %footer#footer.clearfix
-  / footer top start
+  / .footer start
   / ================
-  .dark-bg.animated-text
+  .footer
     .container
-      .row
-        .col-md-12
-          .call-to-action.text-center
-            .row
-              .col-sm-12.margin
-                %h2
-                  = t '.cta1'
-                %h2
-                  = t '.cta2'
-  / footer top end
-  / footer start (Add "dark" class to #footer in order to enable dark footer)
-  / ================
-  %footer#footer.clearfix.dark
-    / .footer start
-    / ================
-    .footer
-      .container
-        .footer-inner
-          .row
-            .col-md-6
-              .footer-content
-                %p
-                  = t '.footer_summary_1'
-                  %br/
-                  %br/
-                  = t '.footer_summary_2'
-                  %br/
-                  %br/
-                  = t '.footer_summary_3'
-                  %br/
-                %ul.list-inline.mb-20
+      .footer-inner
+        .row
+          .col-md-3
+            .footer-content
+              .logo-footer
+                %img#logo-footer{:alt => "", :src => "images/logo_light_blue.png"}/
+              %p
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Ipsa, aut voluptas quaerat...
+                %a{:href => "page-about.html"}
+                  Learn More
+                  %i.fa.fa-long-arrow-right.pl-5
+              .separator-2
+              %nav
+                %ul.nav.nav-pills.nav-stacked
                   %li
-                    %i.text-default.fa.fa-map-marker.pr-5
-                    London
-                  %li.link-dark
-                    %i.text-default.fa.fa-envelope-o.pl-10.pr-5
-                    speak@respira.io
-                .separator-2
-                %ul.social-links.circle.margin-clear.animated-effect-1
-                  %li.facebook
-                    %a{:href => "https://www.facebook.com/respira.io/", :target => "_blank"}
-                      %i.fa.fa-facebook
-                  %li.linkedin
-                    %a{:href => "https://www.linkedin.com/company/respira.io", :target => "_blank"}
-                      %i.fa.fa-linkedin
-                  %li.twitter
-                    %a{:href => "https://twitter.com/respirateam", :target => "_blank"}
-                      %i.fa.fa-twitter
-                  %li.youtube
-                    %a{:href => "https://www.youtube.com/channel/UCkXkHoNv2qh5Xl5GBpZJViQ", :target => "_blank"}
-                      %i.fa.fa-youtube-play
-            .col-md-6
-              .footer-content
-                #MessageSent2.alert.alert-success.hidden
-                  We have received your message, we will contact you very soon.
-                #MessageNotSent2.alert.alert-danger.hidden
-                  Oops! Something went wrong please refresh the page and try again.
-                %footer#footer-form
-                  .form-group.has-feedback.mb-10
-                    = simple_form_for @user, url: user_registration_path do |f|
-                      = flash[:notice]
-                      = f.input :name, label: I18n.t('views.shared.footer.name' ), placeholder: I18n.t('views.shared.footer.name' ), required: true
-                      = f.input :email, label: I18n.t('views.shared.footer.email' ), placeholder: I18n.t('views.shared.footer.email' ), required: true
-                      = f.hidden_field :password, value: '12345678'
-                      = f.hidden_field :password_confirmation, value: '12345678'
-                      = f.button :submit, I18n.t('views.shared.footer.subscribe' ), class: "btn btn-lg btn-default btn-animated", id: "register"
-    / .footer end
-    / .subfooter start
-    / ================
-    .subfooter
-      .container
-        .subfooter-inner
-          .row
-            .col-md-12
-              %p.text-center
-                Copyright © 2017 The Project by
-                = succeed "." do
-                  %a{:href => "http://newwaves.design", :target => "_blank"} New Waves Design
-    / .subfooter end
-  / footer end
-  :javascript
-    $( '#register' ).click(function() {
-    fbq('track', 'CompleteRegistration');
-    });
+                    %a{:href => "http://htmlcoder.me/support", :target => "_blank"} Support
+                  %li
+                    %a{:href => "#"} Privacy
+                  %li
+                    %a{:href => "#"} Terms
+                  %li
+                    %a{:href => "page-about.html"} About
+          .col-md-3
+            .footer-content
+              %h2.title Latest From Blog
+              .separator-2
+              .media.margin-clear
+                .media-left
+                  .overlay-container
+                    %img.media-object{:alt => "blog-thumb", :src => "images/blog-thumb-1.jpg"}/
+                    %a.overlay-link.small{:href => "blog-post.html"}
+                      %i.fa.fa-link
+                .media-body
+                  %h6.media-heading
+                    %a{:href => "blog-post.html"} Lorem ipsum dolor sit amet...
+                  %p.small.margin-clear
+                    %i.fa.fa-calendar.pr-10>
+                    Mar 23, 2017
+                %hr/
+              .media.margin-clear
+                .media-left
+                  .overlay-container
+                    %img.media-object{:alt => "blog-thumb", :src => "images/blog-thumb-2.jpg"}/
+                    %a.overlay-link.small{:href => "blog-post.html"}
+                      %i.fa.fa-link
+                .media-body
+                  %h6.media-heading
+                    %a{:href => "blog-post.html"} Lorem ipsum dolor sit amet...
+                  %p.small.margin-clear
+                    %i.fa.fa-calendar.pr-10>
+                    Mar 22, 2017
+                %hr/
+              .media.margin-clear
+                .media-left
+                  .overlay-container
+                    %img.media-object{:alt => "blog-thumb", :src => "images/blog-thumb-3.jpg"}/
+                    %a.overlay-link.small{:href => "blog-post.html"}
+                      %i.fa.fa-link
+                .media-body
+                  %h6.media-heading
+                    %a{:href => "blog-post.html"} Lorem ipsum dolor sit amet...
+                  %p.small.margin-clear
+                    %i.fa.fa-calendar.pr-10>
+                    Mar 21, 2017
+                %hr/
+              .media.margin-clear
+                .media-left
+                  .overlay-container
+                    %img.media-object{:alt => "blog-thumb", :src => "images/blog-thumb-4.jpg"}/
+                    %a.overlay-link.small{:href => "blog-post.html"}
+                      %i.fa.fa-link
+                .media-body
+                  %h6.media-heading
+                    %a{:href => "blog-post.html"} Lorem ipsum dolor sit amet...
+                  %p.small.margin-clear
+                    %i.fa.fa-calendar.pr-10>
+                    Mar 21, 2017
+              .text-right.space-top
+                %a.link-dark{:href => "blog-large-image-right-sidebar.html"}
+                  %i.fa.fa-plus-circle.pl-5.pr-5>
+                  More
+          .col-md-3
+            .footer-content
+              %h2.title Portfolio Gallery
+              .separator-2
+              .row.grid-space-10
+                .col-xs-4.col-md-6
+                  .overlay-container.mb-10
+                    %img{:alt => "", :src => "images/gallery-1.jpg"}/
+                    %a.overlay-link.small{:href => "portfolio-item.html"}
+                      %i.fa.fa-link
+                .col-xs-4.col-md-6
+                  .overlay-container.mb-10
+                    %img{:alt => "", :src => "images/gallery-2.jpg"}/
+                    %a.overlay-link.small{:href => "portfolio-item.html"}
+                      %i.fa.fa-link
+                .col-xs-4.col-md-6
+                  .overlay-container.mb-10
+                    %img{:alt => "", :src => "images/gallery-3.jpg"}/
+                    %a.overlay-link.small{:href => "portfolio-item.html"}
+                      %i.fa.fa-link
+                .col-xs-4.col-md-6
+                  .overlay-container.mb-10
+                    %img{:alt => "", :src => "images/gallery-4.jpg"}/
+                    %a.overlay-link.small{:href => "portfolio-item.html"}
+                      %i.fa.fa-link
+                .col-xs-4.col-md-6
+                  .overlay-container.mb-10
+                    %img{:alt => "", :src => "images/gallery-5.jpg"}/
+                    %a.overlay-link.small{:href => "portfolio-item.html"}
+                      %i.fa.fa-link
+                .col-xs-4.col-md-6
+                  .overlay-container.mb-10
+                    %img{:alt => "", :src => "images/gallery-6.jpg"}/
+                    %a.overlay-link.small{:href => "portfolio-item.html"}
+                      %i.fa.fa-link
+              .text-right.space-top
+                %a.link-dark{:href => "portfolio-grid-2-3-col.html"}
+                  %i.fa.fa-plus-circle.pl-5.pr-5>
+                  More
+          .col-md-3
+            .footer-content
+              %h2.title Find Us
+              .separator-2
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium odio voluptatem necessitatibus illo vel dolorum soluta.
+              %ul.social-links.circle.animated-effect-1
+                %li.facebook
+                  %a{:href => "http://www.facebook.com", :target => "_blank"}
+                    %i.fa.fa-facebook
+                %li.twitter
+                  %a{:href => "http://www.twitter.com", :target => "_blank"}
+                    %i.fa.fa-twitter
+                %li.googleplus
+                  %a{:href => "http://plus.google.com", :target => "_blank"}
+                    %i.fa.fa-google-plus
+                %li.linkedin
+                  %a{:href => "http://www.linkedin.com", :target => "_blank"}
+                    %i.fa.fa-linkedin
+                %li.xing
+                  %a{:href => "http://www.xing.com", :target => "_blank"}
+                    %i.fa.fa-xing
+              .separator-2
+              %ul.list-icons
+                %li
+                  %i.fa.fa-map-marker.pr-10.text-default
+                  One infinity loop, 54100
+                %li
+                  %i.fa.fa-phone.pr-10.text-default
+                  +00 1234567890
+                %li
+                  %a{:href => "mailto:info@theproject.com"}
+                    %i.fa.fa-envelope-o.pr-10>
+                    info@theproject.com
+  / .footer end
+  / .subfooter start
+  / ================
+  
+  .subfooter
+    .container
+      .subfooter-inner
+        .row
+          .col-md-12
+            %p.text-center
+              Copyright © 2017  
+              = t 'views.starfish_title'
+              by
+              = succeed "." do
+                %a{:href => "http://newwaves.design", :target => "_blank"} New Waves Design. 
+              All Rights Reserved
+
+
+  / .subfooter end
