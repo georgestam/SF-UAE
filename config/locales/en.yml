@@ -69,9 +69,18 @@ en:
       real-time_feedback: Real-time feedback
       wearable: Wearable
     home:
+      home_subtitle_1: Home subtitle 1
+      home_subtitle_2: Home subtitle 2
+      home_title: Home title
       subscribe: Subscribe
       subtitle_1: Digital coach for people who stutter.
       subtitle_2: It tracks speech and breathing to improve lives.
+    home_old:
+      subscribe: Subscribe
+      subtitle_1: Subtitle 1
+      subtitle_2: Subtitle 2
+    index:
+      starfish_title: Starfish title
     timeline:
       time_1_h2: Respira ‘idea’ is born
       time_1_p: Jordi and Marcos come up with the idea of Respira.
@@ -120,12 +129,26 @@ en:
       contact: Contact
       features: Features
       info: Info
+      media: Media
       summary: Summary
       team: Team
       timeline: Timeline
     navbar_media:
       contact: Contact
       home: Home
+    navbar_old:
+      blog: Blog
+      contact: Contact
+      features: Features
+      info: Info
+      summary: Summary
+      team: Team
+      timeline: Timeline
+    navbar_top:
+      arabic: Arabic
+      email: Email
+      english: English
+      phone: Phone
   user_mailer:
     welcome:
       hello: Hello
@@ -147,6 +170,9 @@ en:
     articles:
       index:
         articles: Articles
+    pages:
+      home:
+        starfish_title: Starfish title
     shared:
       footer:
         email: Email

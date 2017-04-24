@@ -53,37 +53,30 @@
                       #navbar-collapse-1.collapse.navbar-collapse.scrollspy.smooth-scroll
                         %ul.nav.navbar-nav.navbar-right
                           %li
-                            %a{:href => "#what"}
+                            %a{:href => "#summary"}
                               = t '.summary'
                           %li
-                            %a{:href => "#features"}
-                              = t '.features'
+                            %a{:href => "#who_we_are"}
+                              = t '.who_we_are'
                           %li
                             %a{:href => "#demo"}
                               = t '.info'
                           %li
+                            %a{:href => "#courses"}
+                              = t '.courses'
+                          %li
+                            %a{:href => "#media"}
+                              = t '.media'
+                          %li
                             %a{:href => "#team"}
                               = t '.team'
                           %li
-                            %a{:href => "#timeline"}
-                              = t '.timeline'
-                          %li
                             %a{:href => "#footer"}
                               = t '.contact'
-                          %li
-                            = link_to t(".media"), articles_path, class: "navbar-wagon-item navbar-wagon-link"
-                          %li.facebook
-                            %a{:href => "https://www.facebook.com/respira.io/", :target => "_blank"}
-                              %i.fa.fa-facebook
-                          %li.linkedin
-                            %a{:href => "https://www.linkedin.com/company/respira.io", :target => "_blank"}
-                              %i.fa.fa-linkedin
                           %li.twitter
-                            %a{:href => "https://twitter.com/respirateam", :target => "_blank"}
+                            %a{:href => "https://twitter.com/r4k4n", :target => "_blank"}
                               %i.fa.fa-twitter
-                          %li.youtube
-                            %a{:href => "https://www.youtube.com/channel/UCkXkHoNv2qh5Xl5GBpZJViQ", :target => "_blank"}
-                              %i.fa.fa-youtube-play
+                          
                   / navbar end
                 / main-navigation end
               / header-right end
