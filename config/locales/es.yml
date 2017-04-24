@@ -69,6 +69,7 @@ es:
       real-time_feedback: Real-time feedback
       wearable: Wearable
     home:
+      call-to-action: Call-to-action
       home_subtitle_1: Home subtitle 1
       home_subtitle_2: Home subtitle 2
       home_title: Home title
@@ -98,6 +99,8 @@ es:
       time_6_h2: Crowdfunding Campaign coming up!
       time_6_p: Respira is planning to run a crowdfunding camping.
     what:
+      call-to-action: Call-to-action
+      call_to_action: Call to action
       crowdfunding: Crowdfunding campaign coming soon
       cta1: Take control of your breathing and speaking habits
       get_notified: Get notified when it's released
@@ -114,6 +117,19 @@ es:
       why_5: "(You can see"
       why_6: some life-changing results of PWS who attended to courses that teach
         the techniques integrated into Respira).
+    what_old:
+      cta1: Cta1
+      get_notified: Get notified
+      here: Here
+      subscribe: Subscribe
+      what: What
+      why: Why
+      why_1: Why 1
+      why_2: Why 2
+      why_3: Why 3
+      why_4: Why 4
+      why_5: Why 5
+      why_6: Why 6
   shared:
     footer:
       cta1: Get notified when it's released
@@ -127,12 +143,14 @@ es:
     navbar:
       blog: Blog
       contact: Contact
+      courses: Courses
       features: Features
       info: Info
       media: Media
       summary: Summary
       team: Team
       timeline: Timeline
+      who_we_are: Who we are
     navbar_media:
       contact: Contact
       home: Home
@@ -148,6 +166,7 @@ es:
       arabic: Arabic
       email: Email
       english: English
+      login: Login
       phone: Phone
   user_mailer:
     welcome:
@@ -172,6 +191,10 @@ es:
         articles: Articles
     pages:
       home:
+        email: Email
+        enter_email: Enter email
+        enter_name: Enter name
+        name: Name
         starfish_title: Starfish title
     shared:
       footer:
