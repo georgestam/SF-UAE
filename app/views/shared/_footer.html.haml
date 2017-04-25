@@ -36,14 +36,13 @@
               %ul.list-icons
                 %li
                   %i.fa.fa-map-marker.pr-10.text-default
-                  One infinity loop, 54100
+                    = t '.starfish_address'
                 %li
                   %i.fa.fa-phone.pr-10.text-default
-                  +00 1234567890
+                    = t '.starfish_mobile'
                 %li
-                  %a{:href => "mailto:info@theproject.com"}
-                    %i.fa.fa-envelope-o.pr-10>
-                    info@theproject.com
+                  %i.fa.fa-envelope-o.pr-10
+                    = t '.starfish_email'
   / .footer end
   / .subfooter start
   / ================
@@ -54,7 +53,8 @@
         .row
           .col-md-12
             %p.text-center
-              Copyright © 2017  
+              Copyright © 
+              = DateTime.now.year  
               = t 'views.starfish_title'
               by
               = succeed "." do

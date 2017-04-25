@@ -4,8 +4,9 @@
     .row
       .col-md-8
         %h3
-          Latest
-          %span.text-default News
+          = t (".latest")
+          %span.text-default 
+            = t (".news")
         .separator-2
         .block
           .media.margin-clear
@@ -54,8 +55,9 @@
               %a{:href => "#"} Read More
       .col-md-4
         %h3
-          Top
-          %span.text-default Stories
+          = t (".top")
+          %span.text-default 
+            = t (".stories")
         .separator-2
         .owl-carousel.content-slider-with-large-controls-autoplay.dark-controls.light-gray-bg.buttons-hide
           .image-box.style-2
@@ -108,26 +110,57 @@
           .col-md-8.col-md-offset-2
             .testimonial.text-center
               .testimonial-image
-                %img.img-circle{:alt => "Jane Doe", :src => "images/testimonial-1.jpg", :title => "Jane Doe"}/
-              %h3 Just Perfect!
+                = cl_image_tag "rakan", class:"img-circle", :title => "Rakan", :client_hints=>true, 
+                :transformation=>[{:width=>400, :height=>400, :gravity=>"face", :radius=>"max", :crop=>"crop"},
+                {:width=>200, :crop=>"scale"}]
+              %h3 
+                = t '.testimonial1_short_recomendation'
               .separator
               .testimonial-body
                 %blockquote
-                  %p Sed ut perspiciatis unde omnis iste natu error sit voluptatem accusan tium dolore laud antium, totam rem dolor sit amet tristique pulvinar, turpis arcu rutrum nunc, ac laoreet turpis augue a justo.
-                .testimonial-info-1 - Jane Doe
-                .testimonial-info-2 By Company
+                  %p 
+                    = t '.testimonial1_long_recomendation'
+                .testimonial-info-1 
+                  = t '.testimonial1_name'
+                .testimonial-info-2 
+                  = t '.testimonial1_title'
       .container
         .row
           .col-md-8.col-md-offset-2
             .testimonial.text-center
               .testimonial-image
-                %img.img-circle{:alt => "Jane Doe", :src => "images/testimonial-2.jpg", :title => "Jane Doe"}/
-              %h3 Amazing!
+                = cl_image_tag "rakan", class:"img-circle", :title => "Rakan", :client_hints=>true, 
+                :transformation=>[{:width=>400, :height=>400, :gravity=>"face", :radius=>"max", :crop=>"crop"},
+                {:width=>200, :crop=>"scale"}]
+              %h3 
+                = t '.testimonial2_short_recomendation'
               .separator
               .testimonial-body
                 %blockquote
-                  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et cupiditate deleniti ratione in. Expedita nemo, quisquam, fuga adipisci omnis ad mollitia libero culpa nostrum est quia eos esse vel!
-                .testimonial-info-1 - Jane Doe
-                .testimonial-info-2 By Company
+                  %p 
+                    = t '.testimonial2_long_recomendation'
+                .testimonial-info-1 
+                  = t '.testimonial2_name'
+                .testimonial-info-2 
+                  = t '.testimonial2_title'
+      .container
+        .row
+          .col-md-8.col-md-offset-2
+            .testimonial.text-center
+              .testimonial-image
+                = cl_image_tag "rakan", class:"img-circle", :title => "Rakan", :client_hints=>true, 
+                :transformation=>[{:width=>400, :height=>400, :gravity=>"face", :radius=>"max", :crop=>"crop"},
+                {:width=>200, :crop=>"scale"}]
+              %h3 
+                = t '.testimonial3_short_recomendation'
+              .separator
+              .testimonial-body
+                %blockquote
+                  %p 
+                    = t '.testimonial3_long_recomendation'
+                .testimonial-info-1 
+                  = t '.testimonial3_name'
+                .testimonial-info-2 
+                  = t '.testimonial3_title'
 / section end
 / section end

@@ -48,11 +48,11 @@
 
 / section start
 / ================
-%section.pv-40.stats.padding-bottom-clear.dark-translucent-bg.hovered.background-img-7{:style => "background-position: 50% 50%;"}
+%section.pv-40.stats.padding-bottom-clear.parallax.dark-translucent-bg.background-img-7{:style => "background-position: 50% 50%;"}
   .clearfix
     .col-md-4.col-xs-12.text-center
       .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
-        %span.icon.dark-bg.large.circle
+        %span.icon.default-bg.large.circle
           %i.fa.fa-diamond
         %h3
           %strong 
@@ -60,7 +60,7 @@
         %span.counter{"data-speed" => "5000", "data-to" => "1525"} 0
     .col-md-4.col-xs-12.text-center
       .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
-        %span.icon.dark-bg.large.circle
+        %span.icon.default-bg.large.circle
           %i.fa.fa-users
         %h3
           %strong 
@@ -68,7 +68,7 @@
         %span.counter{"data-speed" => "5000", "data-to" => "1225"} 0
     .col-md-4.col-xs-12.text-center
       .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
-        %span.icon.dark-bg.large.circle
+        %span.icon.default-bg.large.circle
           %i.fa.fa-cloud-download
         %h3
           %strong 
@@ -76,6 +76,7 @@
         %span.counter{"data-speed" => "5000", "data-to" => "12235"} 0
   / footer top start
   / ================
+
   .footer-top.animated-text{:style => "background-color:rgba(0,0,0,0.3);"}
     .container
       .row
@@ -89,7 +90,7 @@
                   = t '.call_to_action_2' 
               .col-sm-4
                 %p.mt-10
-                  %a#btn-black.btn.btn-lg.btn-default.btn-animated.scrollspy.smooth-scroll{:href => "#subscribe"}
+                  %a.btn.btn-lg.btn-default.btn-animated.scrollspy.margin-clear.smooth-scroll{:href => "#subscribe"}
                     = t '.apply_now'
                     %i.fa.fa-arrow-right.pl-20
 / section end
