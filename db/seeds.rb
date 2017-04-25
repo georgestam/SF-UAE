@@ -22,20 +22,22 @@ admin = User.new({
 
 admin.save!
 
-url = "http://static.giantbomb.com/uploads/original/9/99864/2419866-nes_console_set.png"
+image = "http://static.giantbomb.com/uploads/original/9/99864/2419866-nes_console_set.png"
+youtube = "https://www.youtube.com/watch?v=YoaJW7PPJSM&index=2&list=PLJj-2-ZfLCt8_d1_vyt_g6mWAmKnoVwyt"
 
 articles = []
 5.times do
   title = Faker::ChuckNorris.fact
   articles << Article.create!({
     title: title,
-    description: Faker::Lorem.paragraph(1000),
+    description: Faker::Lorem.paragraph(300),
     locale: "en"
     })
 end
 
 article = Article.first
-article.photo = url
+article.photo = image
+article.youtube = youtube
 article.save!
 
 stories = []
@@ -43,11 +45,12 @@ stories = []
   title = Faker::ChuckNorris.fact
   stories << Story.create!({
     title: title,
-    description: Faker::Lorem.paragraph(1000),
+    description: Faker::Lorem.paragraph(300),
     locale: "en"
     })
 end
 
-stories = Story.first
-stories.photo = url
-stories.save!
+story = Story.first
+story.photo = image
+story.youtube = youtube
+story.save!

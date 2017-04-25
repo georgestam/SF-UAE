@@ -16,6 +16,10 @@ class Article < ApplicationRecord
   def locale_enum
      %w[ea en]
   end
+  
+  def gravity_enum
+     %w[north south east west]
+  end
 
 end
 

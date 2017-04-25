@@ -6,10 +6,18 @@ RailsAdmin.config do |config|
       field :description, :ck_editor
       field :private, :boolean
       field :photo, :carrierwave
+      field :x_mobile, :integer
+      field :y_mobile, :integer
+      field :youtube, :string  
+      field :gravity, :enum do 
+        enum_method do
+          :gravity_enum
+        end  
+      end
       field :locale, :enum do 
         enum_method do
           :locale_enum
-        end  
+        end
       end
     end
   end
@@ -20,6 +28,14 @@ RailsAdmin.config do |config|
       field :description, :ck_editor
       field :private, :boolean
       field :photo, :carrierwave
+      field :x_mobile, :integer
+      field :y_mobile, :integer
+      field :youtube, :string   
+      field :gravity, :enum do 
+        enum_method do
+          :gravity_enum
+        end 
+      end
       field :locale, :enum do 
         enum_method do
           :locale_enum

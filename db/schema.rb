@@ -16,17 +16,18 @@ ActiveRecord::Schema.define(version: 20170425211158) do
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
-    t.string   "title"
-    t.string   "description"
-    t.string   "locale"
-    t.string   "slug",                       null: false
+    t.string   "title",                         null: false
+    t.string   "description",                   null: false
+    t.string   "locale",                        null: false
+    t.string   "slug",                          null: false
+    t.string   "youtube"
     t.boolean  "private",     default: true
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
     t.string   "photo"
-    t.integer  "x_mobil",     default: 1000
-    t.integer  "y_mobil",     default: 200
-    t.string   "gravity",     default: ""
+    t.integer  "x_mobile",    default: 1000
+    t.integer  "y_mobile",    default: 200
+    t.string   "gravity",     default: "south"
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -42,14 +43,18 @@ ActiveRecord::Schema.define(version: 20170425211158) do
   end
 
   create_table "stories", force: :cascade do |t|
-    t.string   "title"
-    t.string   "description"
-    t.string   "locale"
-    t.string   "slug",                       null: false
+    t.string   "title",                         null: false
+    t.string   "description",                   null: false
+    t.string   "locale",                        null: false
+    t.string   "slug",                          null: false
+    t.string   "youtube"
     t.boolean  "private",     default: true
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
     t.string   "photo"
+    t.integer  "x_mobile",    default: 1000
+    t.integer  "y_mobile",    default: 200
+    t.string   "gravity",     default: "south"
   end
 
   create_table "users", force: :cascade do |t|
