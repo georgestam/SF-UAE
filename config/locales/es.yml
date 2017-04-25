@@ -69,6 +69,7 @@ es:
       real-time_feedback: Real-time feedback
       wearable: Wearable
     home:
+      apply_now: Apply now
       call-to-action: Call-to-action
       call_to_action: Call to action
       home_subtitle_1: Home subtitle 1
@@ -150,6 +151,13 @@ es:
         or want to help the project.
       footer_summary_3: Subscribe to the right to get updates!
       moto: We are what we repeatedly do. Excellence, then, is not an act, but a habit.
+    footer_old:
+      cta1: Cta1
+      cta2: Cta2
+      footer_summary_1: Footer summary 1
+      footer_summary_2: Footer summary 2
+      footer_summary_3: Footer summary 3
+      moto: Moto
     navbar:
       blog: Blog
       contact: Contact
@@ -207,8 +215,13 @@ es:
         enter_name: Enter name
         name: Name
         starfish_title: Starfish title
+      summary:
+        image_title1: Image title1
+        image_title2: Image title2
+        image_title3: Image title3
     shared:
       footer:
         email: Email
         name: Name
         subscribe: Subscribe
+    starfish_title: Starfish title

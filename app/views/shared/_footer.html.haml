@@ -7,129 +7,15 @@
     .container
       .footer-inner
         .row
-          .col-md-3
+          .col-xs-12.col-md-8
+  
+          .col-xs-12.col-md-4
             .footer-content
-              .logo-footer
-                %img#logo-footer{:alt => "", :src => "images/logo_light_blue.png"}/
-              %p
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Ipsa, aut voluptas quaerat...
-                %a{:href => "page-about.html"}
-                  Learn More
-                  %i.fa.fa-long-arrow-right.pl-5
+              %h2.title 
+                = t ('.contact_us')
               .separator-2
-              %nav
-                %ul.nav.nav-pills.nav-stacked
-                  %li
-                    %a{:href => "http://htmlcoder.me/support", :target => "_blank"} Support
-                  %li
-                    %a{:href => "#"} Privacy
-                  %li
-                    %a{:href => "#"} Terms
-                  %li
-                    %a{:href => "page-about.html"} About
-          .col-md-3
-            .footer-content
-              %h2.title Latest From Blog
-              .separator-2
-              .media.margin-clear
-                .media-left
-                  .overlay-container
-                    %img.media-object{:alt => "blog-thumb", :src => "images/blog-thumb-1.jpg"}/
-                    %a.overlay-link.small{:href => "blog-post.html"}
-                      %i.fa.fa-link
-                .media-body
-                  %h6.media-heading
-                    %a{:href => "blog-post.html"} Lorem ipsum dolor sit amet...
-                  %p.small.margin-clear
-                    %i.fa.fa-calendar.pr-10>
-                    Mar 23, 2017
-                %hr/
-              .media.margin-clear
-                .media-left
-                  .overlay-container
-                    %img.media-object{:alt => "blog-thumb", :src => "images/blog-thumb-2.jpg"}/
-                    %a.overlay-link.small{:href => "blog-post.html"}
-                      %i.fa.fa-link
-                .media-body
-                  %h6.media-heading
-                    %a{:href => "blog-post.html"} Lorem ipsum dolor sit amet...
-                  %p.small.margin-clear
-                    %i.fa.fa-calendar.pr-10>
-                    Mar 22, 2017
-                %hr/
-              .media.margin-clear
-                .media-left
-                  .overlay-container
-                    %img.media-object{:alt => "blog-thumb", :src => "images/blog-thumb-3.jpg"}/
-                    %a.overlay-link.small{:href => "blog-post.html"}
-                      %i.fa.fa-link
-                .media-body
-                  %h6.media-heading
-                    %a{:href => "blog-post.html"} Lorem ipsum dolor sit amet...
-                  %p.small.margin-clear
-                    %i.fa.fa-calendar.pr-10>
-                    Mar 21, 2017
-                %hr/
-              .media.margin-clear
-                .media-left
-                  .overlay-container
-                    %img.media-object{:alt => "blog-thumb", :src => "images/blog-thumb-4.jpg"}/
-                    %a.overlay-link.small{:href => "blog-post.html"}
-                      %i.fa.fa-link
-                .media-body
-                  %h6.media-heading
-                    %a{:href => "blog-post.html"} Lorem ipsum dolor sit amet...
-                  %p.small.margin-clear
-                    %i.fa.fa-calendar.pr-10>
-                    Mar 21, 2017
-              .text-right.space-top
-                %a.link-dark{:href => "blog-large-image-right-sidebar.html"}
-                  %i.fa.fa-plus-circle.pl-5.pr-5>
-                  More
-          .col-md-3
-            .footer-content
-              %h2.title Portfolio Gallery
-              .separator-2
-              .row.grid-space-10
-                .col-xs-4.col-md-6
-                  .overlay-container.mb-10
-                    %img{:alt => "", :src => "images/gallery-1.jpg"}/
-                    %a.overlay-link.small{:href => "portfolio-item.html"}
-                      %i.fa.fa-link
-                .col-xs-4.col-md-6
-                  .overlay-container.mb-10
-                    %img{:alt => "", :src => "images/gallery-2.jpg"}/
-                    %a.overlay-link.small{:href => "portfolio-item.html"}
-                      %i.fa.fa-link
-                .col-xs-4.col-md-6
-                  .overlay-container.mb-10
-                    %img{:alt => "", :src => "images/gallery-3.jpg"}/
-                    %a.overlay-link.small{:href => "portfolio-item.html"}
-                      %i.fa.fa-link
-                .col-xs-4.col-md-6
-                  .overlay-container.mb-10
-                    %img{:alt => "", :src => "images/gallery-4.jpg"}/
-                    %a.overlay-link.small{:href => "portfolio-item.html"}
-                      %i.fa.fa-link
-                .col-xs-4.col-md-6
-                  .overlay-container.mb-10
-                    %img{:alt => "", :src => "images/gallery-5.jpg"}/
-                    %a.overlay-link.small{:href => "portfolio-item.html"}
-                      %i.fa.fa-link
-                .col-xs-4.col-md-6
-                  .overlay-container.mb-10
-                    %img{:alt => "", :src => "images/gallery-6.jpg"}/
-                    %a.overlay-link.small{:href => "portfolio-item.html"}
-                      %i.fa.fa-link
-              .text-right.space-top
-                %a.link-dark{:href => "portfolio-grid-2-3-col.html"}
-                  %i.fa.fa-plus-circle.pl-5.pr-5>
-                  More
-          .col-md-3
-            .footer-content
-              %h2.title Find Us
-              .separator-2
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium odio voluptatem necessitatibus illo vel dolorum soluta.
+              %p 
+                = t ('.contact_us_description')
               %ul.social-links.circle.animated-effect-1
                 %li.facebook
                   %a{:href => "http://www.facebook.com", :target => "_blank"}

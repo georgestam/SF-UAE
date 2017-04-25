@@ -3,60 +3,25 @@
   .container
     .row
       .col-md-6
-        %h2
-          What We
-          %strong Offer
-        .separator-2
-        %p
-          Lorem ipsum dolor sit amet, lotrem
-          = succeed "." do
-            %span.text-default some colored text
-          %strong attention to this
-          blanditiis, ex cupiditate ipsam debitis rem.
-        %ul.list-icons
-          %li.object-non-visible{"data-animation-effect" => "fadeInUpSmall", "data-effect-delay" => "100"}
-            %i.icon-check-1
-            27 Predifined Home Pages
-          %li.object-non-visible{"data-animation-effect" => "fadeInUpSmall", "data-effect-delay" => "150"}
-            %i.icon-check-1
-            14 Header Options
-          %li.object-non-visible{"data-animation-effect" => "fadeInUpSmall", "data-effect-delay" => "200"}
-            %i.icon-check-1
-            8 Footer Options
-          %li.object-non-visible{"data-animation-effect" => "fadeInUpSmall", "data-effect-delay" => "250"}
-            %i.icon-check-1
-            200+ HTML files
-        %p
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          = succeed "," do
-            %strong Some bold text
-        %a.btn.btn-default.btn-hvr.hvr-shutter-out-horizontal.btn-lg{:href => "page-about.html"}
-          %i.icon-users-1.pr-10>
-          Learn More
-      .col-md-6
         %br/
         %div{:role => "tabpanel"}
           / Nav tabs
           %ul.nav.nav-tabs.style-1{:role => "tablist"}
             %li.active{:role => "presentation"}
-              %a{"aria-controls" => "home", "data-toggle" => "tab", :href => "#home", :role => "tab"}
-                %i.icon-heart.pr-10>
-                We Love
+              %a{"aria-controls" => "home", "data-toggle" => "tab", :href => "#first", :role => "tab"}
+                = t '.video' 
             %li{:role => "presentation"}
-              %a{"aria-controls" => "profile", "data-toggle" => "tab", :href => "#profile", :role => "tab"} What
+              %a{"aria-controls" => "profile", "data-toggle" => "tab", :href => "#second", :role => "tab"} 
+                = t '.free_support'
             %li{:role => "presentation"}
-              %a{"aria-controls" => "messages", "data-toggle" => "tab", :href => "#messages", :role => "tab"} We Do
+              %a{"aria-controls" => "messages", "data-toggle" => "tab", :href => "#third", :role => "tab"} 
+                = t '.the_starfish_story'
+            %li{:role => "presentation"}
+              %a{"aria-controls" => "messages", "data-toggle" => "tab", :href => "#fourth", :role => "tab"} 
+                = t '.what_is_stuttering'
           / Tab panes
           .tab-content
-            #home.tab-pane.fade.in.active{:role => "tabpanel"}
-              .overlay-container.overlay-visible
-                %img{:alt => "", :src => "images/section-image-3.jpg"}/
-                %a.overlay-link{:href => "#"}
-                  %i.fa.fa-link
-                .overlay-bottom.hidden-xs
-                  .text
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis sunt, quae alias impedit ea molestias recusandae.
-            #profile.tab-pane.fade{:role => "tabpanel"}
+            #first.tab-pane.fade.in.active{:role => "tabpanel"}
               .embed-responsive.embed-responsive-16by9
                 %iframe.embed-responsive-item{:src => "//player.vimeo.com/video/29198414?byline=0&portrait=0"}
                 %p
@@ -66,127 +31,19 @@
                   on
                   = succeed "." do
                     %a{:href => "https://vimeo.com"} Vimeo
-            #messages.tab-pane.fade{:role => "tabpanel"}
-              %h3 Lorem ipsum dolor sit amet
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium voluptas excepturi hic eveniet deleniti, voluptate fugit quod sapiente ut nulla voluptates neque a rerum! Sed dolores enim veniam, dolor minus.
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quos quidem amet sapiente praesentium unde, vel corrupti, vero dicta velit fuga ut at accusantium expedita inventore fugit perferendis non reprehenderit.
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente tempore ipsam tenetur molestias eligendi provident! Itaque sapiente neque esse expedita voluptatibus qui officia, fuga a tempora! Alias voluptate pariatur quo.
-  %br/
+            #second.tab-pane.fade{:role => "tabpanel"}
+              = t '.free_support_description'
+            #third.tab-pane.fade{:role => "tabpanel"}
+              = t '.the_starfish_story_description'
+            #fourth.tab-pane.fade{:role => "tabpanel"}
+              = t '.what_is_stuttering_description'
+      .col-md-6
+        %p
+          %p
+            %strong 
+              = t ".who_we_are_title"
+          %p 
+            = t ".who_we_are_description"
+  %br/      
 / section end
-/ section
-/ ================
-%section.pv-30.light-gray-bg.padding-bottom-clear
-  .container
-    .row
-      .col-md-8.col-md-offset-2
-        %h2.text-center
-          Our
-          %strong Portfolio
-        .separator
-        %p.large.text-center Atque ducimus velit, earum quidem, iusto dolorem. Ex ipsam totam quas blanditiis, pariatur maxime ipsa iste, doloremque neque doloribus, error. Corrupti, tenetur.
-        %br/
-  .space-bottom
-    .owl-carousel.content-slider
-      .container
-        .row
-          .col-md-8.col-md-offset-2
-            .testimonial.text-center
-              .testimonial-image
-                %img.img-circle{:alt => "Jane Doe", :src => "images/testimonial-1.jpg", :title => "Jane Doe"}/
-              %h3 Just Perfect!
-              .separator
-              .testimonial-body
-                %blockquote
-                  %p Sed ut perspiciatis unde omnis iste natu error sit voluptatem accusan tium dolore laud antium, totam rem dolor sit amet tristique pulvinar, turpis arcu rutrum nunc, ac laoreet turpis augue a justo.
-                .testimonial-info-1 - Jane Doe
-                .testimonial-info-2 By Company
-      .container
-        .row
-          .col-md-8.col-md-offset-2
-            .testimonial.text-center
-              .testimonial-image
-                %img.img-circle{:alt => "Jane Doe", :src => "images/testimonial-2.jpg", :title => "Jane Doe"}/
-              %h3 Amazing!
-              .separator
-              .testimonial-body
-                %blockquote
-                  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et cupiditate deleniti ratione in. Expedita nemo, quisquam, fuga adipisci omnis ad mollitia libero culpa nostrum est quia eos esse vel!
-                .testimonial-info-1 - Jane Doe
-                .testimonial-info-2 By Company
-    .container
-      .clients-container
-        .clients
-          .client-image.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "100"}
-            %a{:href => "#"}
-              %img{:alt => "", :src => "images/client-1.png"}/
-          .client-image.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "200"}
-            %a{:href => "#"}
-              %img{:alt => "", :src => "images/client-2.png"}/
-          .client-image.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
-            %a{:href => "#"}
-              %img{:alt => "", :src => "images/client-3.png"}/
-          .client-image.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "400"}
-            %a{:href => "#"}
-              %img{:alt => "", :src => "images/client-4.png"}/
-          .client-image.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "500"}
-            %a{:href => "#"}
-              %img{:alt => "", :src => "images/client-5.png"}/
-          .client-image.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "600"}
-            %a{:href => "#"}
-              %img{:alt => "", :src => "images/client-6.png"}/
-          .client-image.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "700"}
-            %a{:href => "#"}
-              %img{:alt => "", :src => "images/client-7.png"}/
-          .client-image.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "800"}
-            %a{:href => "#"}
-              %img{:alt => "", :src => "images/client-8.png"}/
-/ section end
-/ section start
-/ ================
-%section.pv-40.stats.padding-bottom-clear.dark-translucent-bg.hovered.background-img-7{:style => "background-position: 50% 50%;"}
-  .clearfix
-    .col-md-3.col-xs-6.text-center
-      .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
-        %span.icon.dark-bg.large.circle
-          %i.fa.fa-diamond
-        %h3
-          %strong Projects
-        %span.counter{"data-speed" => "5000", "data-to" => "1525"} 0
-    .col-md-3.col-xs-6.text-center
-      .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
-        %span.icon.dark-bg.large.circle
-          %i.fa.fa-users
-        %h3
-          %strong Clients
-        %span.counter{"data-speed" => "5000", "data-to" => "1225"} 0
-    .col-md-3.col-xs-6.text-center
-      .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
-        %span.icon.dark-bg.large.circle
-          %i.fa.fa-cloud-download
-        %h3
-          %strong Downloads
-        %span.counter{"data-speed" => "5000", "data-to" => "12235"} 0
-    .col-md-3.col-xs-6.text-center
-      .feature-box.object-non-visible{"data-animation-effect" => "fadeIn", "data-effect-delay" => "300"}
-        %span.icon.dark-bg.large.circle
-          %i.fa.fa-share
-        %h3
-          %strong Shares
-        %span.counter{"data-speed" => "5000", "data-to" => "15002"} 0
-  / footer top start
-  / ================
-  .footer-top.animated-text{:style => "background-color:rgba(0,0,0,0.3);"}
-    .container
-      .row
-        .col-md-12
-          .call-to-action.text-center
-            .row
-              .col-sm-8
-                %h2 Powerful Bootstrap Template
-                %h2 Waste no more time
-              .col-sm-4
-                %p.mt-10
-                  %a.btn.btn-animated.btn-lg.btn-gray-transparent{:href => "#"}
-                    Purchase
-                    %i.fa.fa-cart-arrow-down.pl-20
 
