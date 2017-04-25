@@ -29,7 +29,7 @@ articles = []
   title = Faker::ChuckNorris.fact
   articles << Article.create!({
     title: title,
-    description: Faker::Lorem.paragraphs,
+    description: Faker::Lorem.paragraph(1000),
     locale: "en"
     })
 end
@@ -43,7 +43,7 @@ stories = []
   title = Faker::ChuckNorris.fact
   stories << Story.create!({
     title: title,
-    description: Faker::Lorem.paragraphs,
+    description: Faker::Lorem.paragraph(1000),
     locale: "en"
     })
 end

@@ -1,6 +1,20 @@
 ---
 ea:
+  articles:
+    index:
+      news: News
   pages:
+    coming_soon:
+      coming_soon_decription: Coming soon decription
+    courses:
+      apply_now: Apply now
+      call_to_action_1: Call to action 1
+      call_to_action_2: Call to action 2
+      courses: Courses
+      courses_description: Courses description
+      courses_title: Courses title
+      graduates: Graduates
+      working_hours: Working hours
     demo:
       What_is_Respira?: What is respira?
       background: Background
@@ -84,6 +98,20 @@ ea:
       subtitle_2: Subtitle 2
     index:
       starfish_title: Starfish title
+    media:
+      read_more_news: Read more news
+      testimonial1_long_recomendation: Testimonial1 long recomendation
+      testimonial1_name: Testimonial1 name
+      testimonial1_short_recomendation: Testimonial1 short recomendation
+      testimonial1_title: Testimonial1 title
+      testimonial2_long_recomendation: Testimonial2 long recomendation
+      testimonial2_name: Testimonial2 name
+      testimonial2_short_recomendation: Testimonial2 short recomendation
+      testimonial2_title: Testimonial2 title
+      testimonial3_long_recomendation: Testimonial3 long recomendation
+      testimonial3_name: Testimonial3 name
+      testimonial3_short_recomendation: Testimonial3 short recomendation
+      testimonial3_title: Testimonial3 title
     summary:
       feature1_title: Feature1 title
       feature2_description: Feature2 description
@@ -93,6 +121,14 @@ ea:
       feature3_title: Feature3 title
       features_description: Features description
       features_moto: Features moto
+      summary_description: Summary description
+    team:
+      team1_description: Team1 description
+      team1_name: Team1 name
+      team1_title: Team1 title
+      team2_description: Team2 description
+      team2_name: Team2 name
+      team2_title: Team2 title
     timeline:
       time_1_h2: Respira ‘idea’ is born
       time_1_p: Jordi and Marcos come up with the idea of Respira.
@@ -141,6 +177,16 @@ ea:
       why_4: Why 4
       why_5: Why 5
       why_6: Why 6
+    who_we_are:
+      free_support: Free support
+      free_support_description: Free support description
+      the_starfish_story: The starfish story
+      the_starfish_story_description: The starfish story description
+      video: Video
+      what_is_stuttering: What is stuttering
+      what_is_stuttering_description: What is stuttering description
+      who_we_are_description: Who we are description
+      who_we_are_title: Who we are title
   shared:
     footer:
       cta1: Get notified when it's released
@@ -151,6 +197,9 @@ ea:
         or want to help the project.
       footer_summary_3: Subscribe to the right to get updates!
       moto: We are what we repeatedly do. Excellence, then, is not an act, but a habit.
+      starfish_address: Starfish address
+      starfish_email: Starfish email
+      starfish_mobile: Starfish mobile
     footer_old:
       cta1: Cta1
       cta2: Cta2

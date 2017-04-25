@@ -1,7 +1,8 @@
+
 #banner
 .banner{:style => "background-image: linear-gradient(210deg, rgba(0,101,168,0.1) 20%, rgba(0,36,61,0.5) 50%), url('#{cl_image_path("ST-UEA/starfish1.jpg", :client_hints=>true, :transformation=>[{:x=>0, :y=>0, :width=>2000, :height=>1000, :dpr=>"auto", :crop=>"fill"}])}');"}
   .banner-content
-    %h1.fadeInRightBig.animated 
+    %h1.logo-font-starfish.fadeInRightBig.animated 
       = t '.home_title'
     %p.normal.fadeInLeftBig.animated
       = t '.home_subtitle_1'
