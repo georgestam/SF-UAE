@@ -2,10 +2,10 @@ class UserMailer < ApplicationMailer
 
   def welcome(user)
   @user = user  # Instance variable => available in view
-
+  welcome = t '.welcome_to_starfish'
   mail(
     to:       @user.email,
-    subject:  "Welcome to Respira #{@user.name.capitalize}!"
+    subject:  "#{welcome} #{@user.name.capitalize}!"
   )
 
   end
