@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
+
   devise_for :users, :controllers => { registrations: 'registrations' }
-  
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   
   scope '(:locale)', locale: /en|ea/ do
   
@@ -17,5 +16,7 @@ Rails.application.routes.draw do
     resources :stories, only: %i[index show]
   
   end
+  
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
 end

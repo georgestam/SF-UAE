@@ -2,6 +2,10 @@
 en:
   articles:
     index:
+      home: Home
+      news: News
+    show:
+      home: Home
       news: News
   pages:
     coming_soon:
@@ -13,7 +17,9 @@ en:
       courses: Courses
       courses_description: Courses description
       courses_title: Courses title
+      finish: Finish
       graduates: Graduates
+      start: Start
       working_hours: Working hours
     demo:
       What_is_Respira?: What is respira?
@@ -99,6 +105,8 @@ en:
     index:
       starfish_title: Starfish title
     media:
+      more_news: More news
+      more_stories: More stories
       read_more_news: Read more news
       testimonial1_long_recomendation: Testimonial1 long recomendation
       testimonial1_name: Testimonial1 name
@@ -235,6 +243,13 @@ en:
       english: English
       login: Login
       phone: Phone
+  stories:
+    index:
+      home: Home
+      our_stories: Our stories
+    show:
+      home: Home
+      story: Story
   user_mailer:
     welcome:
       hello: Hello
@@ -274,3 +289,6 @@ en:
         name: Name
         subscribe: Subscribe
     starfish_title: Starfish title
+    stories:
+      index:
+        stories: Stories

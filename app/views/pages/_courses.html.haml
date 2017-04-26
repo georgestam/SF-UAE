@@ -21,25 +21,25 @@
         - @courses.each do |course|
           .small
             %i.fa.fa-calendar.pr-10
-            = "Start"
+            = t ".start"
             = ":"
             = course.date_start
-            = succeed "10:25" do
+            = succeed course.time_start.strftime("%l %M %p") do
               %i.fa.fa-clock-o.pl-10.pr-10
             %br
             %i.fa.fa-calendar.pr-10
-            = "Finish"
+            = t ".finish"
             = ":"
             = course.date_finish 
           %h5
             %i.fa.fa-map-marker.pr-10
             = course.location 
-            %a.margin-left.btn.btn-gray-transparent.btn-sm.btn-animated.scrollspy.margin-clear.smooth-scroll{:href => "#subscribe"}
-              = t '.apply_now'
-              %i.fa.fa-arrow-right.pl-20
-            %br
           = course.description
           %hr
+        %a.btn.btn-gray-transparent.btn-sm.btn-animated.scrollspy.margin-clear.smooth-scroll{:href => "#subscribe"}
+          = t '.apply_now'
+          %i.fa.fa-arrow-right.pl-20
+        %br
         
 
 / section start
