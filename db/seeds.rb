@@ -54,3 +54,19 @@ story = Story.first
 story.photo = image
 story.youtube = youtube
 story.save!
+
+courses = []
+5.times do
+  courses << Course.create!({
+    date_start: Date.today - rand(1000),
+    date_finish: Date.today - rand(1000),
+    time_start: Time.now,
+    location: "Dubai",
+    locale: "en"
+    })
+end
+
+course = Course.second
+course.locale = "ea"
+course.description = Faker::ChuckNorris.fact
+course.save!

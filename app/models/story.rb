@@ -4,7 +4,8 @@ class Story < ApplicationRecord
   
   LANGUAGES = %w[ea en].freeze
   
-  validates :title, :description, presence: true, length: { minimum: 10 }
+  validates :title, presence: true, length: { minimum: 10 }
+  validates :description, presence: true, length: { minimum: 100 }
   validates :locale,  inclusion: { in: LANGUAGES, allow_nil: false }
   
   friendly_id :title, use: :slugged
