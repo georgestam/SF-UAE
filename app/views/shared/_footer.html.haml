@@ -7,9 +7,14 @@
     .container
       .footer-inner
         .row
-          .col-xs-12.col-md-8
+          .col-xs-12.col-md-5.col-md-push-2
+            = cl_image_tag "ST-UEA/logo_large_white.png",                               
+              client_hints: true,                                                                
+              transformation: [{dpr:"auto", gravity:"", crop:"fill"}], 
+              class: "img-responsive center-block img-rounded-half",                             
+              style: "margin: 20px 0 20px 0"
   
-          .col-xs-12.col-md-4
+          .col-xs-12.col-md-4.col-md-push-4
             .footer-content
               %h2.title 
                 = t ('.contact_us')
@@ -58,7 +63,7 @@
               = t 'views.starfish_title'
               by
               = succeed "." do
-                %a{:href => "http://newwaves.design", :target => "_blank"} New Waves Design. 
+                %a{:href => "http://newwaves.design", :target => "_blank"} New Waves Design 
               All Rights Reserved
 
 
