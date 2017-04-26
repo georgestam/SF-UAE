@@ -37,13 +37,15 @@
         .call-to-action.pv-40.text-center
           .row
             .col-sm-8.col-sm-offset-2
-              %form.form-inline.margin-clear
-                .form-group.has-feedback.no-box
-                  = simple_form_for @user, url: user_registration_path do |f|
-                    = flash[:notice]
-                    = f.input :name, placeholder: I18n.t('views.pages.home.name' ), label: false, required: true
-                    = f.input :email, placeholder: I18n.t('views.pages.home.email' ), label: false, required: true
-                    = f.hidden_field :password, value: '12345678'
-                    = f.hidden_field :password_confirmation, value: '12345678'
-                    = f.button :submit, I18n.t('views.pages.home.apply_now' ), class: "btn btn-lg btn-default.btn-animated margin-clear", id: "register" 
-  
+              -# %form.form-inline.margin-clear
+              .form-inline.margin-clear
+                = simple_form_for @user, url: user_registration_path do |f|
+                  = flash[:notice]
+                  = f.input :name, label: false, placeholder: I18n.t('views.shared.footer.name' ), required: true
+                  = f.input :email, label: false, placeholder: I18n.t('views.shared.footer.email' ), required: true
+                  = f.hidden_field :password, value: '12345678'
+                  = f.hidden_field :password_confirmation, value: '12345678'
+                  = f.button :submit, I18n.t('views.shared.footer.subscribe' ), class: "btn btn-lg btn-default.btn-animated margin-clear", id: "register"
+                        
+                                      
+                      

@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
     get "/coming_soon", to: "pages#coming_soon", as: :coming_soon
     
-    resources :pages, only: %i[index] 
+    resources :pages, only: %i[index create] 
   
     resources :articles, only: %i[index show]
     
