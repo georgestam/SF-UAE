@@ -4,7 +4,9 @@ class PagesController < ApplicationController
   before_action :destroy_user_if_current_user, only: [:index]
 
   def index
-    @courses = Course.where(locale: I18n.locale)
+    @courses = Course.where(locale: I18n.locale).sort_by(&:date_start).last(4)
+    @articles = Article.where(locale: I18n.locale).last(4)
+    @stories = Story.where(locale: I18n.locale)
   end
   
   def coming_soon

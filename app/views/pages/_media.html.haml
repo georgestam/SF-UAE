@@ -1,3 +1,8 @@
+:sass
+
+  .story-margin
+    margin: 0 0 20px 0 !important
+
 #media.linked
 %section.section.clearfix
   .container
@@ -9,51 +14,25 @@
             = t (".news")
         .separator-2
         .block
-          .media.margin-clear
-            .media-left
-              .overlay-container
-                %img.media-object{:alt => "blog-thumb", :src => "images/medical-blog-thumb-1.jpg"}/
-                %a.overlay-link.small{:href => "blog-post.html"}
-                  %i.fa.fa-link
-            .media-body
-              %h5.media-heading
-                %a{:href => "blog-post.html"} Lorem ipsum dolor sit amet
-              %p.small
-                %i.fa.fa-calendar.pr-10>
-                Mar 23, 2015
-              %p.margin-clear.small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt corrupti, cum exercitationem.
-              %a{:href => "#"} Read More
-            %hr/
-          .media.margin-clear
-            .media-left
-              .overlay-container
-                %img.media-object{:alt => "blog-thumb", :src => "images/medical-blog-thumb-2.jpg"}/
-                %a.overlay-link.small{:href => "blog-post.html"}
-                  %i.fa.fa-link
-            .media-body
-              %h5.media-heading
-                %a{:href => "blog-post.html"} Perspiciatis laborum necess
-              %p.small
-                %i.fa.fa-calendar.pr-10>
-                Mar 22, 2015
-              %p.margin-clear.small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt corrupti, cum exercitationem.
-              %a{:href => "#"} Read More
-            %hr/
-          .media.margin-clear
-            .media-left
-              .overlay-container
-                %img.media-object{:alt => "blog-thumb", :src => "images/medical-blog-thumb-3.jpg"}/
-                %a.overlay-link.small{:href => "blog-post.html"}
-                  %i.fa.fa-link
-            .media-body
-              %h5.media-heading
-                %a{:href => "blog-post.html"} Cum eligendi nisi rerum porro
-              %p.small
-                %i.fa.fa-calendar.pr-10>
-                Mar 21, 2015
-              %p.margin-clear.small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt corrupti, cum exercitationem.
-              %a{:href => "#"} Read More
-            = link_to t('.more_news'), articles_path, class: "btn btn-dark"
+          - @articles.each do |article|
+            .media.margin-clear
+              .media-left
+                = cl_image_tag article.photo.presence || "at/apple.jpg",                               
+                  client_hints: true,                                                                
+                  transformation: [{dpr:"auto"}], 
+                  class: "media-object"                           
+              .media-body
+                %h5.media-heading
+                  = link_to article.title, article_path(article)
+                %p.small
+                  %i.fa.fa-calendar.pr-10>
+                  = article.created_at.strftime("%B %d %Y")
+                %p.margin-clear.small 
+                  = article.description.first(200).html_safe
+                  = "..."
+                = link_to (t'.read_more'), article_path(article)
+              %hr
+          = link_to t('.more_news'), articles_path, class: "btn btn-dark"
       .col-md-4
         %h3
           = t (".top")
@@ -61,45 +40,24 @@
             = t (".stories")
         .separator-2
         .owl-carousel.content-slider-with-large-controls-autoplay.dark-controls.light-gray-bg.buttons-hide
-          .image-box.style-2
-            .overlay-container.overlay-visible
-              %img{:alt => "", :src => "images/education-1.jpg"}/
-              %a.overlay-link{:href => "#"}
-                %i.fa.fa-link
-              .overlay-bottom
-                .text
-                  %p.lead.margin-clear.text-left.mobile-visible Graduation
-            .body.padding-horizontal-clear
-              %p Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.
-              %a.link-dark{:href => "page-services.html"}
-                Read More
+          - @stories.each do |story|
+            .image-box.style-2
+              .overlay-container.overlay-visible
+                = cl_image_tag story.photo.presence || "at/apple.jpg",                               
+                  client_hints: true,                                                                
+                  transformation: [{dpr:"auto"}], 
+                  class: "media-object"
+                = link_to story_path(story), class: "overlay-link" do
+                  %i.fa.fa-link
+              .body.padding-horizontal-clear
+                %h5.media-heading.story-margin
+                  = story.title.upcase
+                %p.margin-clear.small.story-margin
+                  = story.description.first(300).html_safe
+                  = "..."
+                = link_to (t'.read_more'), story_path(story), class:"link-dark"
                 %i.pl-5.fa.fa-angle-double-right
-          .image-box.style-2
-            .overlay-container.overlay-visible
-              %img{:alt => "", :src => "images/education-2.jpg"}/
-              %a.overlay-link{:href => "#"}
-                %i.fa.fa-link
-              .overlay-bottom
-                .text
-                  %p.lead.margin-clear.text-left.mobile-visible A success story
-            .body.padding-horizontal-clear
-              %p Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.
-              %a.link-dark{:href => "page-services.html"}
-                Read More
-                %i.pl-5.fa.fa-angle-double-right
-          .image-box.style-2
-            .overlay-container.overlay-visible
-              %img{:alt => "", :src => "images/education-3.jpg"}/
-              %a.overlay-link{:href => "#"}
-                %i.fa.fa-link
-              .overlay-bottom
-                .text
-                  %p.lead.margin-clear.text-left.mobile-visible Lorem Ipsum sit amt
-            .body.padding-horizontal-clear
-              %p Lorem ipsum dolor sit amet, consectetur adipis elit. Aliquam atque ipsam nihil dood truck quinoa.
-              %a.link-dark{:href => "page-services.html"}
-                Read More
-                %i.pl-5.fa.fa-angle-double-right
+        
         = link_to t('.more_stories'), stories_path, class: "btn btn-dark"
       
 

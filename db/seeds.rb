@@ -36,6 +36,7 @@ articles = []
 end
 
 article = Article.first
+article.locale = "ea"
 article.photo = image
 article.youtube = youtube
 article.save!
@@ -51,6 +52,7 @@ stories = []
 end
 
 story = Story.first
+story.locale = "ea"
 story.photo = image
 story.youtube = youtube
 story.save!

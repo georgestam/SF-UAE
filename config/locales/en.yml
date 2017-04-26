@@ -19,6 +19,9 @@ en:
       courses_title: Courses title
       finish: Finish
       graduates: Graduates
+      number_of_courses: 230
+      number_of_graduates: 751
+      number_of_hours: 4234
       start: Start
       working_hours: Working hours
     demo:

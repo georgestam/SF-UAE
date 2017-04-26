@@ -19,6 +19,9 @@ ea:
       courses_title: Courses title
       finish: Finish
       graduates: Graduates
+      number_of_courses: Number of courses
+      number_of_graduates: Number of graduates
+      number_of_hours: Number of hours
       start: Start
       working_hours: Working hours
     demo:
