@@ -19,7 +19,7 @@
             = t '.feature1_title'
           .separator.clearfix
           %p 
-            = t '.feature2_descrption'
+            = t '.feature1_description'
       
       .col-md-4
         .pv-30.ph-20.feature-box.bordered.shadow.text-center.object-non-visible{"data-animation-effect" => "fadeInDownSmall", "data-effect-delay" => "150"}
@@ -41,7 +41,6 @@
           .separator.clearfix
           %p 
             = t '.feature3_description'
-  
   .container
     .row
       / main start
@@ -49,8 +48,8 @@
       .main.col-md-12
         .separator-2
         .row
-          .col-md-6
-            = t ".summary_description"
+          .col-md-6.top-margin
+            = t ".summary_description_html"
           .col-md-6
             .owl-carousel.content-slider-with-controls
               .overlay-container.overlay-visible

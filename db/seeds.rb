@@ -30,8 +30,9 @@ articles = []
   title = Faker::ChuckNorris.fact
   articles << Article.create!({
     title: title,
-    description: Faker::Lorem.paragraph(300),
+    description: Faker::Lorem.paragraph(50),
     locale: "en"
+    youtube: youtube
     })
 end
 
@@ -46,15 +47,15 @@ stories = []
   title = Faker::ChuckNorris.fact
   stories << Story.create!({
     title: title,
-    description: Faker::Lorem.paragraph(300),
+    description: Faker::Lorem.paragraph(50),
     locale: "en"
+    youtube: youtube
     })
 end
 
 story = Story.first
 story.locale = "ea"
 story.photo = image
-story.youtube = youtube
 story.save!
 
 courses = []
