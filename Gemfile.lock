@@ -119,6 +119,7 @@ GEM
     gibbon (3.0.1)
       faraday (>= 0.9.1)
       multi_json (>= 1.11.0)
+    gli (2.16.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     haml (4.0.7)
@@ -153,6 +154,11 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    localeapp (2.1.1)
+      gli
+      i18n (~> 0.4)
+      json
+      rest-client
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -328,6 +334,7 @@ DEPENDENCIES
   jquery-rails
   letter_opener
   listen (~> 3.0.5)
+  localeapp
   pg
   pry-byebug
   pry-rails
