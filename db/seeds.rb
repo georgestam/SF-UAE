@@ -31,7 +31,7 @@ articles = []
   articles << Article.create!({
     title: title,
     description: Faker::Lorem.paragraph(50),
-    locale: "en"
+    locale: "en",
     youtube: youtube
     })
 end
@@ -48,7 +48,7 @@ stories = []
   stories << Story.create!({
     title: title,
     description: Faker::Lorem.paragraph(50),
-    locale: "en"
+    locale: "en",
     youtube: youtube
     })
 end
