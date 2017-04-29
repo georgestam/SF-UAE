@@ -61,9 +61,9 @@ story.save!
 courses = []
 5.times do
   courses << Course.create!({
-    date_start: Date.today - rand(1000),
-    date_finish: Date.today - rand(1000),
-    time_start: Time.now,
+    date_start: DateTime.current - rand(1000),
+    date_finish: DateTime.current - rand(1000),
+    time_start: DateTime.current,
     location: "Dubai",
     locale: "en"
     })
