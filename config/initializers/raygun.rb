@@ -1,5 +1,5 @@
 Raygun.setup do |config|
-  config.api_key = "zyhrFhI/bUaFoOz2RjPh/g=="
+  config.api_key = "QobcVGR3SIEAk7XzYccYvw=="
   config.filter_parameters = Rails.application.config.filter_parameters
 
   # The default is Rails.env.production?
