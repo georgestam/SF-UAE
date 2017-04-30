@@ -1,7 +1,6 @@
 default: &default
   database: <%= "SFUAE_#{Rails.env}" %>
   adapter: postgresql
-  username: root
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 

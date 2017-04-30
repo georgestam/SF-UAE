@@ -11,7 +11,7 @@ def production?
 end
 
 def staging?
-  Rails.env.production?
+  Rails.env.staging?
 end
 
 def development_or_test?
@@ -22,6 +22,6 @@ def development_or_production?
   development? || production?
 end
 
-def staging_or_production?
+def production_or_staging?
   staging? || production?
 end

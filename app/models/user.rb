@@ -8,7 +8,7 @@ class User < ApplicationRecord
   validates :name, presence: true
 
   after_create :send_welcome_email
-  after_create :subscribe_to_newsletter, if: :staging_or_production?
+  after_create :subscribe_to_newsletter, if: :production_or_staging?
 
   private
 

@@ -2,6 +2,5 @@ Raygun.setup do |config|
   config.api_key = "QobcVGR3SIEAk7XzYccYvw=="
   config.filter_parameters = Rails.application.config.filter_parameters
 
-  # The default is Rails.env.production?
-  # config.enable_reporting = !Rails.env.development? && !Rails.env.test?
+  config.enable_reporting = production_or_staging?
 end

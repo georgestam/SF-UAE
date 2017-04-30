@@ -21,6 +21,50 @@ module SFUAE
     
     eval File.read(Rails.root.join('config', 'initializers', 'global_functions.rb'))
     
+    def self.host
+      if development_or_test?
+        'localhost'
+      elsif staging?
+        'sf-uea-staging.herokuapp.com'
+      else
+        'sf-uea.herokuapp.com'
+      end
+    end
+
+    def self.port
+      if test?
+        @@application_port ||= "5#{1000 + (Random.rand * 8999).to_i}".to_i
+      elsif development?
+        3000
+      else
+        nil
+      end
+    end
+
+    def self.protocol
+      if development_or_test?
+        'http'
+      else
+        'https'
+      end
+    end
+
+    def self.set_url_options!
+      [
+        config.action_controller.default_url_options,
+        config.action_mailer.default_url_options,
+        Rails.application.routes.default_url_options,
+        Devise::Engine.routes.default_url_options
+      ].each do |config|
+
+        config[:host] = self.host
+        config[:port] = self.port if self.port
+        config[:protocol] = self.protocol
+        config[:only_path] = false
+         
+      end
+    end
+    
     config.i18n.default_locale = :en
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '*.{rb,yml}').to_s]
     
@@ -29,12 +73,13 @@ module SFUAE
     end
 
     config.assets.precompile += Ckeditor.assets
-    config.assets.precompile += %w( ckeditor/* )
+    config.assets.precompile += %w(ckeditor/*)
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
     
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
   end
+  
   
 end
