@@ -18,10 +18,6 @@ def development_or_test?
   development? || test?
 end
 
-def development_or_production?
-  development? || production?
-end
-
 def production_or_staging?
   staging? || production?
 end
