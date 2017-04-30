@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
-  skip_before_action :authenticate_user!, only: [:index, :coming_soon]
-  before_action :destroy_user_if_current_user, only: [:index]
+  skip_before_action :authenticate_user!, only: %i[index coming_soon]
+  before_action :destroy_user_if_current_user, only: %i[index]
 
   def index
     @courses = Course.where(locale: I18n.locale).sort_by(&:date_start).last(4)
