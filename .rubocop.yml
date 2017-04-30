@@ -2,7 +2,7 @@ AllCops:
   TargetRubyVersion: 2.4
   Exclude:
     - "db/schema.rb"
-    - "lib/generators/kuina_mailer/*"
+    - "app/lib/youtube_embed.rb"
   UseCache: false
 Rails:
   Enabled: true

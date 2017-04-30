@@ -41,7 +41,6 @@ gem 'faker', '~> 1.7'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 
 group :development, :test do
-  gem "erb2haml"
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rubocop', '~> 0.48.1', require: false
