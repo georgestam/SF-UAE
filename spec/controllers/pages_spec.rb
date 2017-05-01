@@ -6,10 +6,11 @@ RSpec.describe PagesController, type: :controller do
       
       it 'diplays the landing page' do
         get 'index'
-        controller_ok(200)
+        controller_ok
       end
       
     end
+    
   end
   
 end 
