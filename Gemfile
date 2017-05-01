@@ -42,22 +42,20 @@ gem 'haml', '~> 4.0', '>= 4.0.7'
 
 gem 'vemv', github: 'vemv/vemv', ref: '2df6eeed573bb52c5fc02fc60e1e5e75988b66df'
 
-
 group :development, :test do
-  gem 'binding_of_caller'
   gem 'better_errors'
+  gem 'binding_of_caller'
 
+  gem "letter_opener"
+  gem 'listen', '~> 3.0.5'
   gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'spring'
-  gem 'listen', '~> 3.0.5'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-  gem "letter_opener"
   gem 'rubocop', '~> 0.48.1'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
   
   gem 'awesome_print'
   gem 'factory_girl_rails'
-  gem 'faker', '~> 1.7'
   gem 'pry-nav'
   gem 'pry-stack_explorer'
 end
