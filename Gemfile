@@ -6,7 +6,7 @@ gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'pg'
 gem 'puma'
-gem 'rails', '5.0.0.1'
+gem 'rails', '5.0.1'
 gem 'redis'
 
 gem 'autoprefixer-rails'
@@ -40,18 +40,40 @@ gem 'faker', '~> 1.7'
 
 gem 'haml', '~> 4.0', '>= 4.0.7'
 
-group :development, :test do
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'rubocop', '~> 0.48.1', require: false
+gem 'vemv', github: 'vemv/vemv', ref: '2df6eeed573bb52c5fc02fc60e1e5e75988b66df'
 
-  gem 'listen', '~> 3.0.5'
+
+group :development, :test do
+  gem 'binding_of_caller'
+  gem 'better_errors'
+
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
+  gem 'listen', '~> 3.0.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
-
   gem "letter_opener"
+  gem 'rubocop', '~> 0.48.1'
+  
+  gem 'awesome_print'
+  gem 'factory_girl_rails'
+  gem 'faker', '~> 1.7'
+  gem 'pry-nav'
+  gem 'pry-stack_explorer'
+end
+
+group :test do
+  gem 'capybara', '~> 2.11'
+  gem 'database_cleaner', '~> 1.5'
+  gem 'launchy', '~> 2.4'
+  gem 'rails-controller-testing', '~> 1'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-retry', '~> 0.5'
+  gem 'selenium-webdriver', '~> 2.47'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'simplecov', '~> 0.12', require: false
+  gem 'timecop', '~> 0.8'
+  gem 'webmock', '~> 2.3'
 end
 
 
