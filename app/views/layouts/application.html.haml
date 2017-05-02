@@ -1,6 +1,13 @@
 !!!
 %html
   %head
+    - if test?
+      :javascript
+        window.errors = []
+        window.onerror = function(a, b, c){
+          window.errors.push([a, b, c]);
+          return false; // false: don't swallow exceptions.
+        }
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title= yield(:title)
     = render 'favicon'

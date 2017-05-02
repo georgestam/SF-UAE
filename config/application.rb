@@ -71,6 +71,8 @@ module SFUAE
     config.generators do |generate|
       generate.assets false
     end
+    
+    config.active_record.time_zone_aware_types = [:datetime]
 
     config.assets.precompile += Ckeditor.assets
     config.assets.precompile += %w(ckeditor/*)
