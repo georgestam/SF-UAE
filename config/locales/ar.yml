@@ -1,9 +1,166 @@
----
 ar:
+  articles:
+    index:
+      home: الرئيسية
+      news: الأخبار
+    show:
+      home: الصفحة الرئيسية
+      news: الاأخبار
+  pages:
+    coming_soon:
+      coming_soon_decription: قريبا
+    courses:
+      apply_now: قدم طلب
+      call_to_action_1: مشروع ستارفيش العربي
+      call_to_action_2: "!It's Happening"
+      courses: مشروع ستارفيش العربي
+      courses_description_html: "يجمع مشروع ستارفيش سنوات من الخبرة  من العمل مع ع\
+        لاجات أخرى، لقد جمعنا أفضل الأعمال الرائدة التي بدأت بها هذه العلاجات، مع\
+        \ الخبرة والدروس التي اكتسبناها من مساعدة مئات الأشخاص على تجاوز التلعثم ع\
+        لى مر السنوات.\n\nيبدأ تدريب ستارفيش الخاص بك بدورة مدتها 3 أيام، وتكون جم\
+        يع تدريبات ستارفيش بشكل فردي، ويقوم بها متلعثمون سابقون، يقومون فيها بتدري\
+        س طريقة (التنفس الضلعي)، العلاج بتقليل الهروب وتطوير الموقف الإيجابي المثب\
+        تة والناجحة بطريقة لطيفة.\n\nنحن نعي خصوصية كل متلعثم في دورات ستارفيش الت\
+        دريبية، وأن تخلصهم من التلعثم سيتم وفق سرعتهم الخاصة، وفي وقتهم المناسب، و\
+        لهذا السبب نحن نحدد دائماً عدد الأشخاص في الدورة لضمان حصول الجميع على أقص\
+        ى حد ممكن من الاهتمام.\n\nهناك استراحات أثناء النهار على فترات منتظمة، وطب\
+        عاً فترة الغداء، لنضمن أن تبقى نشطاً، نحن نجعل اليوم التدريبي يدوم لأقصى ق\
+        دراتك لا لحد إنهاكك، يبدأ النهار في التاسعة صباحاً وينتهي بين الخامسة والس\
+        ادسة مساء، نحن نريد تعليمك السيطرة، هدفنا ليس تحطيمك.\n\nوفي المساء هناك ف\
+        رص كثيرة للتدرب على التقنيات الجديدة في مواقف اجتماعية مريحة حول طاولة الع\
+        شاء، مع جميع زملائك في الدورة، في مطعم الفندق.\n\nالجلسات التدريبية للتحكم\
+        \ بالتلعثم تكون نظرية فقط، سنقوم بتحضيرك للمواقف اليومية، بجلسات لعب الأدو\
+        ار المعمقة، مثل مخاطبة العمل بالهاتف، طلب وجبة في مطعم، مخاطبة مجموعة ما إ\
+        لخ، ومن ثم نتابع، بسرعتك وعلى وقتك الخاص، إلى العمل في مركز تسوق وطرح أسئل\
+        ة على الغرباء، قد يبدو هذا وصفاً مستحيلاً ورائعاً لك الآن (وهو وضع يتجنبه\
+        \ جميع المتلعثمون ما أمكن)، لكن مع تدريبنا سيصبح هذا الوضع تحدياً تستمتع ب\
+        ه، ستنتهي دورة ستارفيش بتحضيرك لحياتك الجديدة، وكيفية التعامل مع بعض التحد\
+        يات الممكن أن تواجهك.\n\n "
+      courses_title: Courses title
+      finish: ينتهي
+      graduates: الخريحين
+      number_of_courses: 230
+      number_of_graduates: 2000+
+      number_of_hours: 6600+
+      start: يبدأ
+      working_hours: ساعات العمل
+    home:
+      apply_now: قدم طلب
+      call_to_action: قدم طلب الآن
+      home_subtitle_1: "!It's Happening"
+      home_title: مشروع ستارفيش العربي
+    media:
+      more_news: المزيد من الأخبار
+      more_stories: المزيد من القصص
+      testimonial1_long_recomendation: اLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      testimonial1_name: Testimonial1 name
+      testimonial1_short_recomendation: Testimonial1 short recomendation
+      testimonial1_title: Testimonial1 title
+      testimonial2_long_recomendation: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      testimonial2_name: Testimonial2 name
+      testimonial2_short_recomendation: Testimonial2 short recomendation
+      testimonial2_title: Testimonial2 title
+      testimonial3_long_recomendation: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      testimonial3_name: Testimonial3 name
+      testimonial3_short_recomendation: Testimonial3 short recomendation
+      testimonial3_title: Testimonial3 title
+    summary:
+      feature1_title: دعم مدى الحياة
+      features_description: لا ينتهي تدريبك بانتهاء دورة الثلاث أيام الأولية، بل تبدأ عناية مشروع ستارفيش المستمرة بدعم مجاني يستمر مدى حياتك، وهو الأساسي لتعافيك.
+      features_moto: نحن هنا لمساعدتكم
+      summary_description_html: "نرحب بكم في مشروع ستارفيش ، نحن لا نعدكم بحل خراف\
+        ي للتلعثم، لن نحاول تنويمكم مغناطيسا، أو أن نبيعكم أو نطلب منكم ارتداء أجه\
+        زة أو معدات، هدفنا ان نؤمن علاجاً مناسباً وفعالاً، مع دعم للسيطرة على التل\
+        عثم لمدى الحياة لأكبر عدد ممكن من الناس الذين يتلعثمون.\n\nنحن نطمح لتأمين\
+        \ هذا العلاج بدون تحقيق أرباح طائلة على حساب معاناتك من التلعثم، نحن نتمنى\
+        \ أن تستمتع بالحديث السلس مع مشروع ستارفيش.\n\nقام راكان الصقر بدعوة مشروع\
+        \ ستارفيش إلى الإمارات، وهو شخص سعودي تعافى من التلعثم، لم يكن راكان راضيا\
+        ً عن الطريقة المكلفة التي طرحت بها الطريقه التسويقيه متعددة الأفرع طريقة (ا\
+        لتنفس الضلعي) بالإمارات العربية المتحدة، يعتقد راكان أن تقديم مشروع ستارفي\
+        ش سيوفر علاجاً فعالاً، ومدعوماً، وسهل الوصول إليه لأعداد كبيرة من الأشخاص\
+        \ الذين يتلعثمون في المنطقة، بسعر مقبول ويمكن تحمله."
+    team:
+      team1_name: م. راكان العتيبي
+      team1_title: مهندس ورائد أعمال
+      team2_description: jhglgllghlghlgl
+      team2_name: د. شيهانة المتروك
+      team2_title: دكتوراه بالفيروسات السرطانية
+    who_we_are:
+      free_support: دعم مدى الحياة
+      free_support_description_html: "<p><strong>التدريب الخاص بك لا تنتهي بعد انت\
+        هاء الدورة الأولي لمدة ثلاثة أيام، لأنه من الآن أن مشروع نجم على ما يجري ا\
+        لرعاية يبدأ الدعم مدى الحياة مجانا، وهو أمر ضروري جدا لشفائك </strong>. </p><p>ع\
+        دم وجود نسخة احتياطية الدعم & # 8211؛ وحتى الآن السبب الأكثر شيوعا معين عل\
+        ى نجم طلبات بالطبع ردا على & # 8216؛ لماذا تعتقد غيرها من العلاجات ديدن &\
+        \ # 8217؛ ر العمل بالنسبة لك & # 8217؛؟ وهذا هو السبب في أن في العمق، على\
+        \ ما يجري، الدعم مدى الحياة مجانا من هذا القبيل تشكل جزءا أساسيا من نجم ال\
+        بحر. <br/>\n\nمزيج من التزامكم التعافي من التلعثم ومستمرة رعاية ومتابعة من\
+        \ الجميع المشاركة في مشروع نجم البحر ستكون الأساس لمستقبلك الكلام سهل السي\
+        طرة عليها. </p>"
+      the_starfish_story: قصة ستارفيش
+      the_starfish_story_description_html: "كان هناك رجل يمشي بمحاذاة شاطئ مهجور ع\
+        ند المغيب، وأثناء مشيه رأى صبياً صغيراً على مسافة\n\nبعيدة، وعندما اقترب م\
+        نه لاحظ أنه ينحني باستمرار ليلتقط شيئاً ويرميه إلى الماء.\n\nاستمر بالرمي\
+        \ إلى المحيط، والرجل يقترب منه حتى رأى ما كان الصبي يفعله، كان يلتقط نجمة\
+        \ البحر (ستارفيش)  الذي جرفه الموج إلى الشاطئ، واحد في كل مرة، ويعيده إلى\
+        \ الماء، سأل الرجل الصبي عما كان يفعله فأجابه: “أنا أرمي نجمة البحر (ستارف\
+        يش) الذي جرف إلى الشاطئ إلى البحر، حتى لا يموت من نقص الأوكسيجين.\n\nقال ا\
+        لرجل: “لكنك لن تستطيع إنقاذهم جميعاً، هناك المئات على هذا الشاطئ، والمرجح\
+        \ أن هذا يحدث على مئات الشواطئ الأخرى، لن تستطيع إحداث فرق”.\n\nابتسم الصب\
+        ي، ثم انحنى والتقط نجمة البحر (ستارفيش) وألقاه في الماء وقال “لقد أحدثت فر\
+        قاً“."
+      video: فيديو تعريفي
+      what_is_stuttering: ماهي التأتأة؟
+      what_is_stuttering_description_html: |2-
+         التأتأة والتلعثم كلمتان مختلفتان تستخدمان لوصف الحالة ذاتها، عموماً تستخدم كلمة “تأتأة” أكثر من أمريكا الشمالية، أستراليا والشرق الأوسط بينما في المملكة المتحدة المستخدم هو “تلعثم”.
+
+        نحن لا نعلم سبب التلعثم، لكن أظهرت الأبحاث أن هناك عدة عوامل مؤثرة: عدد المتلعثمين من الذكور يفوق عدد الإناث بأربع مرات، وتظهر الإحصائيات وجود أكثر من 400000 بالغ في دول مجلس التعاون الخليجي يتلعثمون، وهذا يشكل حوالي 1% من تعداد البالغين.
+
+        من الضروري أن ندرك اختلاف الأفراد المتلعثمين عن بعضهم، واختلاف تلعثمهم، كل شخص هو حالة، ويجب على أي تدريب أو علاج أن يحترم ذلك، لذا يعتبر كل شخص هو الخبير بتلعثمه، الاعتراف واحترام هذه الحقائق الهامة هو أساس مشروع نجم البحر ونجاحه في مساعدة الناس في تعافيهم، التلعثم هو اضطراب في الطلاقة، ويتجلى بسلوكيات تؤثر في سلاسة الكلام، لدى جميع الأشخاص عسر في الطلاقة لحد ما، الذي يميز المتلعثمين عن غير المتلعثمين هو تكرار و/أو حدة عسر الطلاقة لديهم. والعامل الآخر الذي يميز بينهم هو ترافق التلعثم مع شعور بفقدان السيطرة، إن فقدان السيطرة هذا، الذي لا يشعر به المستمع أو يلاحظه، هو المشكلة الأكبر لدى المتلعثم.
+  shared:
+    footer:
+      starfish_address: قريبا!
+      starfish_email: rakan@starfishproject.ae
+      starfish_mobile: 966563556865
+    navbar:
+      contact: تواصل معنا
+      courses: الدورات
+      media: الإعلام
+      summary: نبذة
+      team: فريق العمل
+      who_we_are: من نحن؟
+    navbar_media:
+      contact: اتصل بنا
+      home: الرئيسية
+    navbar_top:
+      arabic: العربية
+      email: rakan@starfishproject.ae
+      english: الإنلقليزية
+      login: الدخول
+      phone: 966563556865
+  stories:
+    index:
+      home: الرئيسية
+      our_stories: قصص نجاح
+    show:
+      home: الرئيسية
+      story: قصه
+  user_mailer:
+    welcome:
+      hello: Hello
+      p1: Thank you for registering with Starfish!
+      p2: We would appreciate if you could share our project.
+      p3: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      p4: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      p5: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      p6: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      p7: Many thanks for joining us!
+      p8: I am the coolest Rakan
+      welcome_to_starfish: Welcome to starfish
   views:
     articles:
       index:
-        articles: Articles
+        articles: المقالات
     pages:
       summary:
         image_title1: Image title1
@@ -11,10 +168,10 @@ ar:
         image_title3: Image title3
     shared:
       footer:
-        email: Email
-        name: Name
-        subscribe: Subscribe
-    starfish_title: Starfish Arabia
+        email: الإيميل
+        name: الأسم
+        subscribe: اشترك
+    starfish_title: مشروع ستارفيش العربي
     stories:
       index:
-        stories: Stories
+        stories: قصص النجاح
