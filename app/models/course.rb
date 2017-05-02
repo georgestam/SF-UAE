@@ -1,6 +1,6 @@
 class Course < ApplicationRecord
   
-  LANGUAGES = %w[ea en].freeze
+  LANGUAGES = %w[ar en].freeze
   
   validates :date_start, presence: true
   validates :date_finish, presence: true
@@ -13,7 +13,7 @@ class Course < ApplicationRecord
   private
   
   def locale_enum
-     %w[ea en]
+     %w[ar en]
   end
   
   def date_finish_cannot_be_earlier_than_date_start

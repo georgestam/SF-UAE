@@ -38,7 +38,7 @@ articles = []
 end
 
 article = Article.first
-article.locale = "ea"
+article.locale = "ar"
 article.photo = image
 article.youtube = youtube
 article.save!
@@ -55,7 +55,7 @@ stories = []
 end
 
 story = Story.first
-story.locale = "ea"
+story.locale = "ar"
 story.photo = image
 story.save!
 
@@ -72,6 +72,6 @@ courses = []
 end
 
 course = Course.second
-course.locale = "ea"
+course.locale = "ar"
 course.description = Faker::ChuckNorris.fact
 course.save!

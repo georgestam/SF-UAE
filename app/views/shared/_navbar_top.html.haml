@@ -136,10 +136,10 @@
         .cs-top-modal.cs-lang-top-modal
           %a.cs-open-modal1
             %i.cs-in.fa.fa-globe>
-            - if I18n.locale == :ea
+            - if I18n.locale == :ar
               = link_to (t '.english'), url_for( :locale => 'en'), id: "change-to-english"
             - else
-              = link_to (t '.arabic'), url_for( :locale => 'ea'), id: "change-to-arabic"
+              = link_to (t '.arabic'), url_for( :locale => 'ar'), id: "change-to-arabic"
               
       .cs-top-module.cs-module-social
         -# %a.cs-in.fa.fa-facebook{:href => "https://www.facebook.com/WedProductions", :target => "_blank"}
