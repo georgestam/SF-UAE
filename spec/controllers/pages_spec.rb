@@ -4,8 +4,11 @@ RSpec.describe PagesController, type: :controller do
 
     context 'when it is loaded' do 
       
-      it 'loads correctly' do
+      before {
         get 'index'
+      }
+      
+      it 'gets a 200 response' do
         controller_ok
       end
       
