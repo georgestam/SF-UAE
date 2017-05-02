@@ -27,14 +27,14 @@ en:
       apply_now: Apply now
       call_to_action: Call to action
       home_subtitle_1: "It's Happening!"
-      home_subtitle_2: ''
+      home_subtitle_2: 'home.home_subtitle_2'
       home_title: Starfish Project Arabia
     media:
       more_news: More news
       more_stories: More stories
       testimonial1_long_recomendation: |
-        coming soon
-      testimonial1_name: coming soon
+        testimonial1_long_recomendation
+      testimonial1_name: testimonial1_name
       testimonial1_short_recomendation: Testimonial1 short recomendation
       testimonial1_title: Testimonial1 title
       testimonial2_long_recomendation: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -52,10 +52,10 @@ en:
         • No charge refresher courses.
         • Regular Starfish Skype conference support group with world-wide members helping each other.
       feature1_title: Free support
-      feature2_description: ''
-      feature2_title: ''
-      feature3_description: ''
-      feature3_title: ''
+      feature2_description: 'feature1_description'
+      feature2_title: 'feature2_description'
+      feature3_description: 'feature2_title'
+      feature3_title: 'feature3_title'
       features_description: Your training does not end after the three day initial course, for it is now that The Starfish Project on-going care begins with FREE lifetime support, which is so essential to your recovery.
       features_moto: We are here to help YOU!
       summary_description_html: "We welcome you to the Starfish Project. We do not\
