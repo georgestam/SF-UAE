@@ -23,5 +23,5 @@ def production_or_staging?
 end
 
 def ci?
-  # [ENV['CODESHIP'], ENV['CI']].any? &:present?
+  [ENV['CODESHIP'], ENV['CI']].any? &:present?
 end

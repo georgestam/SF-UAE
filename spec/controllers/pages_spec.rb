@@ -4,7 +4,7 @@ RSpec.describe PagesController, type: :controller do
 
     context 'when it is loaded' do 
       
-      it 'diplays the landing page' do
+      it 'loads correctly' do
         get 'index'
         controller_ok
       end

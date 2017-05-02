@@ -1,63 +1,50 @@
 source 'https://rubygems.org'
 ruby '2.3.1'
 
-gem 'devise'
-gem 'figaro'
-gem 'jbuilder', '~> 2.0'
-gem 'pg'
-gem 'puma'
-gem 'rails', '5.0.1'
-gem 'redis'
-
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
+gem 'carrierwave', '~> 1.0'
+gem 'ckeditor', '4.1.3'
+gem 'cloudinary'
+gem 'devise'
+gem 'faker', '~> 1.7'
+gem 'figaro'
 gem 'font-awesome-sass'
-
+gem 'fontello_rails_converter'
+gem 'friendly_id', '~> 5.1.0'
+gem 'gibbon'
+gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
+gem 'pg'
+gem 'puma'
+gem 'pundit', '~> 1.1'
+gem 'rails_admin', '>= 1.0.0.rc'
+gem 'rails-i18n', '~> 5.0.0'
+gem 'rails', '5.0.1'
+gem 'raygun4ruby'
+gem 'redis'
+gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
-
-gem 'cloudinary'
-gem 'fontello_rails_converter'
-gem 'raygun4ruby'
-
-gem 'gibbon'
 gem 'validates_email_format_of'
-
-gem 'ckeditor', '4.1.3'
-gem 'rails-i18n', '~> 5.0.0'
-
-# add rails-admin for news posts
-gem 'carrierwave', '~> 1.0'
-gem 'friendly_id', '~> 5.1.0'
-gem 'rails_admin', '>= 1.0.0.rc'
-gem 'remotipart', github: 'mshibuya/remotipart'
-
-gem 'pundit', '~> 1.1'
-
-gem 'faker', '~> 1.7'
-
-gem 'haml', '~> 4.0', '>= 4.0.7'
-
 gem 'vemv', github: 'vemv/vemv', ref: '2df6eeed573bb52c5fc02fc60e1e5e75988b66df'
 
 group :development, :test do
+  gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
-
-  gem "letter_opener"
+  gem 'factory_girl_rails'
   gem 'listen', '~> 3.0.5'
   gem 'pry-byebug'
-  gem 'pry-rails'
-  gem 'rubocop', '~> 0.48.1'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-  
-  gem 'awesome_print'
-  gem 'factory_girl_rails'
   gem 'pry-nav'
+  gem 'pry-rails'
   gem 'pry-stack_explorer'
+  gem 'rubocop', '~> 0.48.1'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring'
+  gem "letter_opener"
 end
 
 group :test do
