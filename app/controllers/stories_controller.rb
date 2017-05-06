@@ -12,7 +12,7 @@ class StoriesController < ApplicationController
     @story = Story.friendly.find(params[:id])
     authorize @story
     if @story.youtube
-      @video = YoutubeEmbed.youtube_embed(@story.youtube)
+      @video = Youtube.youtube_embed(@story.youtube)
     end 
   end
 

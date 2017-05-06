@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'production_or_staging'
 
 Rails.application.configure do

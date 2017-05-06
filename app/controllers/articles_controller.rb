@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
     @article = Article.friendly.find(params[:id])
     authorize @article
     if @article.youtube
-      @video = YoutubeEmbed.youtube_embed(@article.youtube)
+      @video = Youtube.youtube_embed(@article.youtube)
     end 
   end
 

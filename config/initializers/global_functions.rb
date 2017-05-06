@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def development?
   Rails.env.development?
 end

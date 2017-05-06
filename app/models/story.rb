@@ -19,7 +19,7 @@ class Story < ApplicationRecord
   end
   
   def gravity_enum
-     %w[north south east west]
+     %w[north south east west ""]
   end
 
 end

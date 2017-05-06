@@ -40,7 +40,7 @@
               -# %form.form-inline.margin-clear
               .form-inline.margin-clear
                 = simple_form_for @user, url: user_registration_path do |f|
-                  = flash[:notice]
+                  -# = flash[:notice]
                   = f.input :name, label: false, placeholder: I18n.t('views.shared.footer.name' ), required: true
                   = f.input :email, label: false, placeholder: I18n.t('views.shared.footer.email' ), required: true
                   = f.hidden_field :password, value: '12345678'

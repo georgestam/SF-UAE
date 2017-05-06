@@ -142,3 +142,5 @@ Style/AlignParameters:
   Enabled: false
 Performance/RedundantMerge:
   Enabled: false
+Metrics/LineLength:
+  Max: 112
