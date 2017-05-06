@@ -2,7 +2,7 @@ AllCops:
   TargetRubyVersion: 2.4
   Exclude:
     - "db/schema.rb"
-    - "app/lib/youtube_embed.rb"
+    - "app/lib/youtube.rb"
   UseCache: false
 Rails:
   Enabled: true
@@ -142,5 +142,3 @@ Style/AlignParameters:
   Enabled: false
 Performance/RedundantMerge:
   Enabled: false
-Metrics/LineLength:
-  Max: 112
