@@ -32,11 +32,12 @@
   / "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html)
   %body.no-trans.front-page.transparent-header
     / move this to the bottom once remove js home page
-    = javascript_include_tag 'application'
+    
     = render 'shared/navbar_selector'
     = render 'shared/flashes'
     = yield
     = render 'shared/footer'
+    = javascript_include_tag 'application'
     %script{:async => "", "data-trackduck-id" => "590218e49106930117d90167", :src => "//cdn.trackduck.com/toolbar/prod/td.js"}
     -# google analitics
     
