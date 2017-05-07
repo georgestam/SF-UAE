@@ -5,7 +5,7 @@ Devise.setup do |config|
   config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
   config.expire_all_remember_me_on_sign_out = true
   config.mailer_sender = "rakan@starfishproject.ae"
-  config.password_length = Rails.env.development? ? 1..72 : 10..255
+  config.password_length = Rails.env.development? ? 1..72 : 8..255
   config.reconfirmable = true
   config.remember_for = 6.weeks
   config.rememberable_options = {secure: false} # must be non-secure, else flash messages dissapear

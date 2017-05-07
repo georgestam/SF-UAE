@@ -12,7 +12,7 @@ class SubscribeToNewsletterService
           status: "subscribed",
           merge_fields: {
             FNAME: @user.name,
-            LOCALE: "en"
+            LOCALE: @user.locale
           }
         }
       )

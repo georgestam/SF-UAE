@@ -64,7 +64,6 @@ group :staging, :development, :test do
   gem 'better_errors'
   gem 'factory_girl_rails'
   gem 'faker', '~> 1.7'
-  gem 'pry-byebug'
   gem 'pry-nav'
   gem 'pry-rails'
   gem 'pry-stack_explorer'
