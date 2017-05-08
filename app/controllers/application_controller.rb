@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   skip_before_action :verify_authenticity_token
   
-  before_action :set_locale
+  around_action :set_locale
   
   include Pundit
   
@@ -27,7 +27,9 @@ class ApplicationController < ActionController::Base
   end
   
   def set_locale #  i18n
-    I18n.locale = params[:locale] || I18n.default_locale
+    I18n.locale = params[:locale] || current_user.try(:locale) || extract_locale_from_accept_language_header || I18n.default_locale
+    yield
+    I18n.locale = I18n.default_locale
   end
   
   def default_url_options
@@ -42,5 +44,14 @@ class ApplicationController < ActionController::Base
     end
     @user = User.new
   end 
+  
+  private
+  def extract_locale_from_accept_language_header
+    if language = request.env['HTTP_ACCEPT_LANGUAGE']
+      locale = language.scan(/^[a-z]{2}/).first  # => => "en"
+      logger.debug "* Locale set using accept_language to '#{locale}'"
+      locale
+    end 
+  end
   
 end

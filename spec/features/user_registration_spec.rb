@@ -6,7 +6,7 @@ describe "User registration" do
     visit root_path
   }
   
-  it 'works' do
+  it 'results in a User being created' do
     
     find("#user_name").set reference.name
     find("#user_email").set reference.email

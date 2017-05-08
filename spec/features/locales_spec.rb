@@ -5,7 +5,7 @@ describe 'Locale switching when landing page is in English' do
   }
     
   it 'changes to locale in Arabic when Arabic button is clicked' do
-    expect{ find("#change-to-arabic").click }.to change{ I18n.locale }.from(:en).to(:ar)
+    expect{ find("#change-to-arabic").click }.to change{ page.current_path }.from("/en").to("/ar")
     page_ok
   end
   

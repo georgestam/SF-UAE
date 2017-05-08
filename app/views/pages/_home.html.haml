@@ -7,7 +7,7 @@
     %p.normal.fadeInLeftBig.animated
       = t '.home_subtitle_1'
       %br
-      = t '.home_subtitle_2'
+      = t '.home_subtitle_2' 
     %p
       %a.btn.btn-lg.btn-default.btn-animated.scrollspy.margin-clear.smooth-scroll{:href => "#subscribe"}
         = t '.apply_now'
@@ -43,8 +43,6 @@
                   -# = flash[:notice]
                   = f.input :name, label: false, placeholder: I18n.t('views.shared.footer.name' ), required: true
                   = f.input :email, label: false, placeholder: I18n.t('views.shared.footer.email' ), required: true
-                  = f.hidden_field :password, value: '12345678'
-                  = f.hidden_field :password_confirmation, value: '12345678'
                   = f.button :submit, I18n.t('views.shared.footer.subscribe' ), class: "btn btn-lg btn-default.btn-animated margin-clear", id: "register"
                         
                                       

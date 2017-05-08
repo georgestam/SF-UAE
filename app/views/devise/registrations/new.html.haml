@@ -6,7 +6,5 @@
       .form-inputs
         = f.input :name, required: true
         = f.input :email, required: true, autofocus: true
-        = f.hidden_field :password, value: '12345678'
-        = f.hidden_field :password_confirmation, value: '12345678'
       .form-actions
         = f.button :submit, "Sign up"
