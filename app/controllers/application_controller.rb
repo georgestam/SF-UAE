@@ -46,11 +46,13 @@ class ApplicationController < ActionController::Base
   end 
   
   private
+  
   def extract_locale_from_accept_language_header
-    if language = request.env['HTTP_ACCEPT_LANGUAGE']
-      locale = language.scan(/^[a-z]{2}/).first  # => => "en"
+    language = request.env['HTTP_ACCEPT_LANGUAGE'].presence
+    if language
+      locale = HttpAcceptLangParser.parse(language)
       logger.debug "* Locale set using accept_language to '#{locale}'"
-      locale
+      locale.in?(User::LANGUAGES) ? locale : nil
     end 
   end
   

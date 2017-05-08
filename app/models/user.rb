@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
   validates :email, email_format: { message: "doesn't look like an email address" }, presence: true
   validates :name, presence: true
-  validates :locale, inclusion: { in: LANGUAGES }
+  validates :locale, inclusion: LANGUAGES
 
   after_create :send_welcome_email
   after_create :subscribe_to_newsletter, if: :production_or_staging?
