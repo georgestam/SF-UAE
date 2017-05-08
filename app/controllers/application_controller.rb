@@ -52,7 +52,7 @@ class ApplicationController < ActionController::Base
     if language
       locale = HttpAcceptLangParser.parse(language)
       logger.debug "* Locale set using accept_language to '#{locale}'"
-      locale.in?(User::LANGUAGES) ? locale : nil
+      locale.in?(User::LANGUAGES.map(&:to_sym)) ? locale : nil
     end 
   end
   
