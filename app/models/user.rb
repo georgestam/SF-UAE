@@ -16,7 +16,7 @@ class User < ApplicationRecord
   private
   
   def password_required?
-    super if self.admin
+    self.admin
   end
 
   def send_welcome_email
