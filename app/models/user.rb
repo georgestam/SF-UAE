@@ -14,6 +14,10 @@ class User < ApplicationRecord
   after_create :subscribe_to_newsletter, if: :production_or_staging?
 
   private
+  
+  def password_required?
+    super if self.admin
+  end
 
   def send_welcome_email
     Users::Creation::UserMailer.welcome(self.id).deliver_now
